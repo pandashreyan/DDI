@@ -1,0 +1,53 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.installed.cfg
+*.egg-info
+
+# ===== Virtual Environments =====
+.venv/
+.venv-*/
+venv/
+env/
+ENV/
+.Python
+
+# ===== Model Files (large binaries) =====
+*.pkl
+*.h5
+*.pt
+*.pth
+*.onnx
+*.joblib
+
+# ===== Logs =====
+*.log
+logs/
+
+# ===== Environment / Secrets =====
+.env
+*.env
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== IDE =====
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ===== Data Files (large) =====
+*.npy
+*.npz
+# Uncomment below if CSV files are too large:
+# *.csv
