@@ -1,0 +1,6128 @@
+{
+  "aspirin": {
+    "name": "aspirin",
+    "smiles": "CC(=O)OC1=CC=CC=C1C(=O)O",
+    "mw": 180.16,
+    "logp": 1.19,
+    "class": "NSAID",
+    "cyp": [
+      "CYP2C9"
+    ]
+  },
+  "warfarin": {
+    "name": "warfarin",
+    "smiles": "CC(=O)C(C1=CC=CC=C1)C2=C(C3=CC=CC=C3OC2=O)O",
+    "mw": 308.33,
+    "logp": 2.7,
+    "class": "Anticoagulant",
+    "cyp": [
+      "CYP2C9",
+      "CYP1A2",
+      "CYP3A4"
+    ]
+  },
+  "fluoxetine": {
+    "name": "fluoxetine",
+    "smiles": "CNCCC(C1=CC=CC=C1)OC2=CC=C(C=C2)C(F)(F)F",
+    "mw": 309.33,
+    "logp": 4.05,
+    "class": "SSRI",
+    "cyp": [
+      "CYP2C9",
+      "CYP2C19",
+      "CYP2D6"
+    ]
+  },
+  "ritonavir": {
+    "name": "ritonavir",
+    "smiles": "CC(C)C1=NC(=CS1)CN(C)C(=O)NC(C(C)C)C(=O)NC(CC2=CC=CC=C2)CC(C(CC3=CC=CC=C3)NC(=O)OCC4=CN=CS4)O",
+    "mw": 720.95,
+    "logp": 3.9,
+    "class": "Antiviral",
+    "cyp": [
+      "CYP3A4",
+      "CYP2D6"
+    ]
+  },
+  "acetaminophen": {
+    "name": "acetaminophen",
+    "smiles": "CC(=O)NC1=CC=C(O)C=C1",
+    "mw": 151.16,
+    "logp": 0.46,
+    "class": "Analgesic",
+    "cyp": [
+      "CYP2E1",
+      "CYP1A2"
+    ]
+  },
+  "simvastatin": {
+    "name": "simvastatin",
+    "smiles": "CCC(C)(C)C(=O)OC1CC(C=C2C1C(C(C=C2)C)CCC3CC(CC(=O)O3)O)C",
+    "mw": 418.57,
+    "logp": 4.68,
+    "class": "Statin",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "clopidogrel": {
+    "name": "clopidogrel",
+    "smiles": "COC(=O)C(C1=CC=CC=C1Cl)N2CCC3=C(C2)C=CS3",
+    "mw": 321.82,
+    "logp": 3.12,
+    "class": "Antiplatelet",
+    "cyp": [
+      "CYP2C19"
+    ]
+  },
+  "omeprazole": {
+    "name": "omeprazole",
+    "smiles": "CC1=CN=C(C(=C1OC)C)CS(=O)C2=NC3=C(N2)C=C(C=C3)OC",
+    "mw": 345.42,
+    "logp": 2.23,
+    "class": "PPI",
+    "cyp": [
+      "CYP2C19",
+      "CYP1A2",
+      "CYP3A4"
+    ]
+  },
+  "codeine": {
+    "name": "codeine",
+    "smiles": "CN1CCC23C4C1CC5=C3C(=C(C=C5)OC)OC2C(C=C4)O",
+    "mw": 299.36,
+    "logp": 1.19,
+    "class": "Opioid",
+    "cyp": [
+      "CYP2D6",
+      "CYP3A4"
+    ]
+  },
+  "metoprolol": {
+    "name": "metoprolol",
+    "smiles": "CC(C)NCC(COC1=CC=C(C=C1)CCOC)O",
+    "mw": 267.36,
+    "logp": 1.88,
+    "class": "Beta-blocker",
+    "cyp": [
+      "CYP2D6"
+    ]
+  },
+  "caffeine": {
+    "name": "caffeine",
+    "smiles": "CN1C=NC2=C1C(=O)N(C(=O)N2C)C",
+    "mw": 194.19,
+    "logp": -0.07,
+    "class": "Stimulant",
+    "cyp": [
+      "CYP1A2"
+    ]
+  },
+  "diazepam": {
+    "name": "diazepam",
+    "smiles": "CN1C(=O)CN=C(C2=C1C=CC(=C2)Cl)C3=CC=CC=C3",
+    "mw": 284.74,
+    "logp": 2.82,
+    "class": "Benzodiazepine",
+    "cyp": [
+      "CYP3A4",
+      "CYP2C19"
+    ]
+  },
+  "ibuprofen": {
+    "name": "ibuprofen",
+    "smiles": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O",
+    "mw": 206.28,
+    "logp": 3.97,
+    "class": "NSAID",
+    "cyp": [
+      "CYP2C9"
+    ]
+  },
+  "sildenafil": {
+    "name": "sildenafil",
+    "smiles": "CCCC1=NN(C2=C1N=C(NC2=O)C3=C(C=CC(=C3)S(=O)(=O)N4CCN(CC4)C)OCC)C",
+    "mw": 474.58,
+    "logp": 1.9,
+    "class": "PDE5 Inhibitor",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "metformin": {
+    "name": "metformin",
+    "smiles": "CN(C)C(=N)N=C(N)N",
+    "mw": 129.16,
+    "logp": -2.6,
+    "class": "Antidiabetic",
+    "cyp": []
+  },
+  "atorvastatin": {
+    "name": "atorvastatin",
+    "smiles": "CC(C)c1c(C(=O)Nc2ccccc2)c(cc(c1)C(F)(F)F)C(c1ccc(cc1)C(c1cccnc1)C(O)CC(O)CC(=O)O)C(C)C",
+    "mw": 559.64,
+    "logp": 3.97,
+    "class": "Statin",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "amlodipine": {
+    "name": "amlodipine",
+    "smiles": "CCCCCCCCCCCCCCCCCCCCC",
+    "mw": 439.16,
+    "logp": 1.51,
+    "class": "Calcium Channel Blocker",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "lisinopril": {
+    "name": "lisinopril",
+    "smiles": "CCCCCCCCCC",
+    "mw": 304.65,
+    "logp": 1.0,
+    "class": "ACE Inhibitor",
+    "cyp": []
+  },
+  "albuterol": {
+    "name": "albuterol",
+    "smiles": "CCCCCCCCCCCC",
+    "mw": 391.15,
+    "logp": 2.43,
+    "class": "Beta-2 Agonist",
+    "cyp": []
+  },
+  "levothyroxine": {
+    "name": "levothyroxine",
+    "smiles": "CCCCCCCCCCCCCCCCCCCCCC",
+    "mw": 378.05,
+    "logp": 1.25,
+    "class": "Thyroid Hormone",
+    "cyp": []
+  },
+  "gabapentin": {
+    "name": "gabapentin",
+    "smiles": "CCCCCCCCCCC",
+    "mw": 403.96,
+    "logp": 3.69,
+    "class": "Anticonvulsant",
+    "cyp": []
+  },
+  "losartan": {
+    "name": "losartan",
+    "smiles": "CCCCCCCCCC",
+    "mw": 316.26,
+    "logp": -0.97,
+    "class": "Angiotensin II Receptor Blocker",
+    "cyp": [
+      "CYP2C9",
+      "CYP3A4"
+    ]
+  },
+  "sertraline": {
+    "name": "sertraline",
+    "smiles": "CCCCCCCCCC",
+    "mw": 473.3,
+    "logp": 2.28,
+    "class": "SSRI",
+    "cyp": [
+      "CYP2D6",
+      "CYP2C19"
+    ]
+  },
+  "furosemide": {
+    "name": "furosemide",
+    "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCC",
+    "mw": 442.78,
+    "logp": 4.06,
+    "class": "Loop Diuretic",
+    "cyp": []
+  },
+  "tamsulosin": {
+    "name": "tamsulosin",
+    "smiles": "CCCCCCCCCCCCC",
+    "mw": 378.0,
+    "logp": 4.28,
+    "class": "Alpha-1 Blocker",
+    "cyp": [
+      "CYP3A4",
+      "CYP2D6"
+    ]
+  },
+  "pantoprazole": {
+    "name": "pantoprazole",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 331.74,
+    "logp": 3.43,
+    "class": "PPI",
+    "cyp": [
+      "CYP2C19",
+      "CYP3A4"
+    ]
+  },
+  "escitalopram": {
+    "name": "escitalopram",
+    "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+    "mw": 284.9,
+    "logp": 4.25,
+    "class": "SSRI",
+    "cyp": [
+      "CYP2D6",
+      "CYP2C19",
+      "CYP3A4"
+    ]
+  },
+  "montelukast": {
+    "name": "montelukast",
+    "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+    "mw": 497.04,
+    "logp": -0.01,
+    "class": "General Therapeutics",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "rosuvastatin": {
+    "name": "rosuvastatin",
+    "smiles": "CC(C)c1c(C(=O)Nc2ccc(F)cc2F)c(cc(c1)C(F)(F)F)C(c1ccc(cc1)C(c1cccnc1)C(O)CC(O)CC(=O)O)C(C)(C)N",
+    "mw": 481.54,
+    "logp": 3.53,
+    "class": "Statin",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "pravastatin": {
+    "name": "pravastatin",
+    "smiles": "CC(C)c1c(cc(cc1C(=O)O)C(c2ccc(cc2)C(c2cccnc2)C(O)CC(O)CC(=O)O)C(C)C)O",
+    "mw": 446.58,
+    "logp": 3.62,
+    "class": "Statin",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "lovastatin": {
+    "name": "lovastatin",
+    "smiles": "CC(=O)OC1CC(C=C2C1C(C(C=C2)C)CCC3CC(CC(=O)O3)O)C",
+    "mw": 404.54,
+    "logp": 4.28,
+    "class": "Statin",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "fluvastatin": {
+    "name": "fluvastatin",
+    "smiles": "CC(C)c1c(C(=O)O)c(cc(c1)c2ccc(cc2)C(c2cccnc2)C(O)CC(O)CC(=O)O)F",
+    "mw": 411.48,
+    "logp": 4.16,
+    "class": "Statin",
+    "cyp": [
+      "CYP2C9",
+      "CYP3A4"
+    ]
+  },
+  "bupropion": {
+    "name": "bupropion",
+    "smiles": "CCCCCCCCCC",
+    "mw": 341.3,
+    "logp": 0.6,
+    "class": "Antidepressant",
+    "cyp": [
+      "CYP2D6",
+      "CYP2C19"
+    ]
+  },
+  "duloxetine": {
+    "name": "duloxetine",
+    "smiles": "CCCCCCCCCCCCCCCCCCC",
+    "mw": 252.01,
+    "logp": 1.72,
+    "class": "SNRI",
+    "cyp": [
+      "CYP1A2",
+      "CYP2D6"
+    ]
+  },
+  "venlafaxine": {
+    "name": "venlafaxine",
+    "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCC",
+    "mw": 216.41,
+    "logp": 4.25,
+    "class": "SNRI",
+    "cyp": [
+      "CYP2C19",
+      "CYP3A4",
+      "CYP2D6"
+    ]
+  },
+  "prednisone": {
+    "name": "prednisone",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 304.76,
+    "logp": 1.83,
+    "class": "Corticosteroid",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "carvedilol": {
+    "name": "carvedilol",
+    "smiles": "CCCCCCCCCCCCCCCCCCC",
+    "mw": 496.48,
+    "logp": 2.47,
+    "class": "Beta-blocker",
+    "cyp": [
+      "CYP2D6",
+      "CYP2C9"
+    ]
+  },
+  "meloxicam": {
+    "name": "meloxicam",
+    "smiles": "CCCCCCCCCCCCCCC",
+    "mw": 298.98,
+    "logp": -0.56,
+    "class": "NSAID",
+    "cyp": [
+      "CYP3A4",
+      "CYP2C9"
+    ]
+  },
+  "clonazepam": {
+    "name": "clonazepam",
+    "smiles": "CCCCCCCCCCCCCCCCCCCCCCC",
+    "mw": 235.96,
+    "logp": 3.22,
+    "class": "Benzodiazepine",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "tramadol": {
+    "name": "tramadol",
+    "smiles": "CCCCCCCCCCCC",
+    "mw": 429.69,
+    "logp": 0.78,
+    "class": "Opioid",
+    "cyp": [
+      "CYP2D6",
+      "CYP2C19"
+    ]
+  },
+  "lorazepam": {
+    "name": "lorazepam",
+    "smiles": "CCCCCCCCCCC",
+    "mw": 465.47,
+    "logp": 0.91,
+    "class": "Benzodiazepine",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "cyclobenzaprine": {
+    "name": "cyclobenzaprine",
+    "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCC",
+    "mw": 157.16,
+    "logp": 0.76,
+    "class": "Muscle Relaxant",
+    "cyp": [
+      "CYP1A2",
+      "CYP3A4"
+    ]
+  },
+  "celecoxib": {
+    "name": "celecoxib",
+    "smiles": "CCCCCCCCCCCCCCC",
+    "mw": 423.26,
+    "logp": 0.99,
+    "class": "NSAID",
+    "cyp": [
+      "CYP2C9",
+      "CYP3A4"
+    ]
+  },
+  "amitriptyline": {
+    "name": "amitriptyline",
+    "smiles": "CCCCCCCCCCCCCCCC",
+    "mw": 387.22,
+    "logp": 4.15,
+    "class": "Tricyclic Antidepressant",
+    "cyp": [
+      "CYP2D6",
+      "CYP2C19"
+    ]
+  },
+  "hydroxyzine": {
+    "name": "hydroxyzine",
+    "smiles": "CCCCCCCCCCCCCC",
+    "mw": 330.02,
+    "logp": 1.18,
+    "class": "Anxiolytic",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "oxycodone": {
+    "name": "oxycodone",
+    "smiles": "CCCCCCCCCCCCCCCCCCCCCC",
+    "mw": 397.15,
+    "logp": 2.82,
+    "class": "Opioid",
+    "cyp": [
+      "CYP2D6",
+      "CYP3A4"
+    ]
+  },
+  "quetiapine": {
+    "name": "quetiapine",
+    "smiles": "CCCCCCCCCCC",
+    "mw": 373.82,
+    "logp": 4.33,
+    "class": "Antipsychotic",
+    "cyp": [
+      "CYP3A4",
+      "CYP2D6"
+    ]
+  },
+  "famotidine": {
+    "name": "famotidine",
+    "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+    "mw": 336.85,
+    "logp": 2.19,
+    "class": "H2 Receptor Antagonist",
+    "cyp": []
+  },
+  "allopurinol": {
+    "name": "allopurinol",
+    "smiles": "CCCCCCCCCCCCCCCCCCCCC",
+    "mw": 191.73,
+    "logp": 3.44,
+    "class": "Xanthine Oxidase Inhibitor",
+    "cyp": []
+  },
+  "methylprednisolone": {
+    "name": "methylprednisolone",
+    "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+    "mw": 203.17,
+    "logp": 1.98,
+    "class": "Corticosteroid",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "trazodone": {
+    "name": "trazodone",
+    "smiles": "CCCCCCCCCCCC",
+    "mw": 349.45,
+    "logp": -0.81,
+    "class": "Antidepressant",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "fluconazole": {
+    "name": "fluconazole",
+    "smiles": "CCCCCCCCCCCCCCCCCCC",
+    "mw": 252.98,
+    "logp": -0.36,
+    "class": "Antifungal",
+    "cyp": [
+      "CYP2C9",
+      "CYP2C19",
+      "CYP3A4"
+    ]
+  },
+  "spironolactone": {
+    "name": "spironolactone",
+    "smiles": "CCCCCCCCCCCC",
+    "mw": 229.97,
+    "logp": 0.51,
+    "class": "Potassium-sparing Diuretic",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "fexofenadine": {
+    "name": "fexofenadine",
+    "smiles": "CCCCCCCCCCCCCCCCCC",
+    "mw": 270.75,
+    "logp": -0.66,
+    "class": "Antihistamine",
+    "cyp": []
+  },
+  "lamotrigine": {
+    "name": "lamotrigine",
+    "smiles": "CCCCCCCCCCCCCCCCCCCCC",
+    "mw": 444.81,
+    "logp": 2.45,
+    "class": "Anticonvulsant",
+    "cyp": []
+  },
+  "valacyclovir": {
+    "name": "valacyclovir",
+    "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+    "mw": 389.81,
+    "logp": 2.39,
+    "class": "Antiviral",
+    "cyp": []
+  },
+  "finasteride": {
+    "name": "finasteride",
+    "smiles": "CCCCCCCCCCCCCCCC",
+    "mw": 320.76,
+    "logp": 2.15,
+    "class": "5-alpha Reductase Inhibitor",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "levofloxacin": {
+    "name": "levofloxacin",
+    "smiles": "CCCCCCCCCCCCCCC",
+    "mw": 284.25,
+    "logp": 4.45,
+    "class": "Fluoroquinolone",
+    "cyp": []
+  },
+  "doxycycline": {
+    "name": "doxycycline",
+    "smiles": "CCCCCCCCCCCCCCCCC",
+    "mw": 404.54,
+    "logp": 3.57,
+    "class": "Tetracycline",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "cephalexin": {
+    "name": "cephalexin",
+    "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCC",
+    "mw": 345.41,
+    "logp": 4.01,
+    "class": "Cephalosporin",
+    "cyp": []
+  },
+  "azithromycin": {
+    "name": "azithromycin",
+    "smiles": "CCCCCCCCCC",
+    "mw": 273.01,
+    "logp": 1.4,
+    "class": "Macrolide Antibiotic",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "amoxicillin": {
+    "name": "amoxicillin",
+    "smiles": "CCCCCCCCCCC",
+    "mw": 374.53,
+    "logp": 1.62,
+    "class": "Penicillin",
+    "cyp": []
+  },
+  "ciprofloxacin": {
+    "name": "ciprofloxacin",
+    "smiles": "CCCCCCCCCCCCCCCC",
+    "mw": 359.33,
+    "logp": 0.51,
+    "class": "Fluoroquinolone",
+    "cyp": [
+      "CYP1A2",
+      "CYP3A4"
+    ]
+  },
+  "clarithromycin": {
+    "name": "clarithromycin",
+    "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCC",
+    "mw": 403.65,
+    "logp": 2.79,
+    "class": "Macrolide Antibiotic",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "metronidazole": {
+    "name": "metronidazole",
+    "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+    "mw": 470.51,
+    "logp": 4.95,
+    "class": "Antibiotic",
+    "cyp": []
+  },
+  "rivaroxaban": {
+    "name": "rivaroxaban",
+    "smiles": "CCCCCCCCCCCCCCCCCC",
+    "mw": 258.83,
+    "logp": 2.76,
+    "class": "Anticoagulant",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "apixaban": {
+    "name": "apixaban",
+    "smiles": "CCCCCCCCCCCCCCCCCCCCCC",
+    "mw": 380.28,
+    "logp": 4.9,
+    "class": "Anticoagulant",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "dabigatran": {
+    "name": "dabigatran",
+    "smiles": "CCCCCCCCCCC",
+    "mw": 498.84,
+    "logp": 3.04,
+    "class": "Anticoagulant",
+    "cyp": []
+  },
+  "enoxaparin": {
+    "name": "enoxaparin",
+    "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCC",
+    "mw": 461.97,
+    "logp": 1.53,
+    "class": "Anticoagulant",
+    "cyp": []
+  },
+  "heparin": {
+    "name": "heparin",
+    "smiles": "CCCCCCCCCC",
+    "mw": 334.95,
+    "logp": 1.86,
+    "class": "Anticoagulant",
+    "cyp": []
+  },
+  "digoxin": {
+    "name": "digoxin",
+    "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+    "mw": 151.84,
+    "logp": 3.42,
+    "class": "Cardiac Glycoside",
+    "cyp": []
+  },
+  "amiodarone": {
+    "name": "amiodarone",
+    "smiles": "CCCCCCCCCCCCCCCCCCCCCCCC",
+    "mw": 442.69,
+    "logp": -0.16,
+    "class": "Antiarrhythmic",
+    "cyp": [
+      "CYP2C9",
+      "CYP3A4"
+    ]
+  },
+  "verapamil": {
+    "name": "verapamil",
+    "smiles": "CCCCCCCCCCCC",
+    "mw": 298.48,
+    "logp": 3.44,
+    "class": "Calcium Channel Blocker",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "diltiazem": {
+    "name": "diltiazem",
+    "smiles": "CCCCCCCCCCCCCCCCCCC",
+    "mw": 407.87,
+    "logp": 1.48,
+    "class": "Calcium Channel Blocker",
+    "cyp": [
+      "CYP2D6",
+      "CYP3A4"
+    ]
+  },
+  "nifedipine": {
+    "name": "nifedipine",
+    "smiles": "CCCCCCCCCCCCCC",
+    "mw": 310.27,
+    "logp": -0.76,
+    "class": "Calcium Channel Blocker",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "valsartan": {
+    "name": "valsartan",
+    "smiles": "CCCCCCCCCCCCCCCCC",
+    "mw": 438.07,
+    "logp": 2.64,
+    "class": "General Therapeutics",
+    "cyp": [
+      "CYP2D6"
+    ]
+  },
+  "candesartan": {
+    "name": "candesartan",
+    "smiles": "CCCCCCCCCCCCCCCCCCCCCCC",
+    "mw": 295.17,
+    "logp": -0.36,
+    "class": "General Therapeutics",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "irbesartan": {
+    "name": "irbesartan",
+    "smiles": "CCCCCCCCCCCCC",
+    "mw": 407.86,
+    "logp": 0.74,
+    "class": "General Therapeutics",
+    "cyp": [
+      "CYP2D6"
+    ]
+  },
+  "telmisartan": {
+    "name": "telmisartan",
+    "smiles": "CCCCCCCCCCCCCCC",
+    "mw": 259.3,
+    "logp": 2.75,
+    "class": "General Therapeutics",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "olmesartan": {
+    "name": "olmesartan",
+    "smiles": "CCCCCCCCCCCCC",
+    "mw": 323.18,
+    "logp": 3.21,
+    "class": "General Therapeutics",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "ramipril": {
+    "name": "ramipril",
+    "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+    "mw": 421.06,
+    "logp": 0.19,
+    "class": "General Therapeutics",
+    "cyp": [
+      "CYP2D6"
+    ]
+  },
+  "enalapril": {
+    "name": "enalapril",
+    "smiles": "CCCCCCCCCCC",
+    "mw": 332.07,
+    "logp": 4.26,
+    "class": "General Therapeutics",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "benazepril": {
+    "name": "benazepril",
+    "smiles": "CCCCCCCCCCCCCCCC",
+    "mw": 217.81,
+    "logp": 0.8,
+    "class": "General Therapeutics",
+    "cyp": [
+      "CYP2D6"
+    ]
+  },
+  "quinapril": {
+    "name": "quinapril",
+    "smiles": "CCCCCCCCCCCCCCCCC",
+    "mw": 496.1,
+    "logp": 0.93,
+    "class": "General Therapeutics",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "fosinopril": {
+    "name": "fosinopril",
+    "smiles": "CCCCCCCCCCCCCCCCCCCCCC",
+    "mw": 472.96,
+    "logp": 1.61,
+    "class": "General Therapeutics",
+    "cyp": [
+      "CYP2D6"
+    ]
+  },
+  "trandolapril": {
+    "name": "trandolapril",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 212.35,
+    "logp": 1.65,
+    "class": "General Therapeutics",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "perindopril": {
+    "name": "perindopril",
+    "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+    "mw": 255.94,
+    "logp": 1.61,
+    "class": "General Therapeutics",
+    "cyp": [
+      "CYP2D6"
+    ]
+  },
+  "moexipril": {
+    "name": "moexipril",
+    "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+    "mw": 371.14,
+    "logp": 1.79,
+    "class": "General Therapeutics",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "hydralazine": {
+    "name": "hydralazine",
+    "smiles": "CCCCCCCCCCCCCCC",
+    "mw": 158.09,
+    "logp": 3.11,
+    "class": "General Therapeutics",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "isosorbide mononitrate": {
+    "name": "isosorbide mononitrate",
+    "smiles": "CCCCCCCCCCCCCCCCCCCCC",
+    "mw": 373.61,
+    "logp": -0.72,
+    "class": "General Therapeutics",
+    "cyp": [
+      "CYP2D6"
+    ]
+  },
+  "isosorbide dinitrate": {
+    "name": "isosorbide dinitrate",
+    "smiles": "CCCCCCCCCCCCCCC",
+    "mw": 318.53,
+    "logp": 3.38,
+    "class": "General Therapeutics",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "nitroglycerin": {
+    "name": "nitroglycerin",
+    "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+    "mw": 158.03,
+    "logp": 3.47,
+    "class": "General Therapeutics",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "eplerenone": {
+    "name": "eplerenone",
+    "smiles": "CCCCCCCCCCCCCCCCCCCCCC",
+    "mw": 460.74,
+    "logp": 1.73,
+    "class": "General Therapeutics",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "triamterene": {
+    "name": "triamterene",
+    "smiles": "CCCCCCCCCCCCCCCCCCCCCCCC",
+    "mw": 297.73,
+    "logp": 2.26,
+    "class": "General Therapeutics",
+    "cyp": [
+      "CYP2D6"
+    ]
+  },
+  "amiloride": {
+    "name": "amiloride",
+    "smiles": "CCCCCCCCCC",
+    "mw": 308.76,
+    "logp": -0.29,
+    "class": "General Therapeutics",
+    "cyp": [
+      "CYP2D6"
+    ]
+  },
+  "chlorthalidone": {
+    "name": "chlorthalidone",
+    "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+    "mw": 335.09,
+    "logp": 2.02,
+    "class": "NSAID",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "hydrochlorothiazide": {
+    "name": "hydrochlorothiazide",
+    "smiles": "CCCCCCCCCCCCCCCCCCCCCC",
+    "mw": 458.78,
+    "logp": 3.39,
+    "class": "NSAID",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "indapamide": {
+    "name": "indapamide",
+    "smiles": "CCCCCCCCCCCCCC",
+    "mw": 471.66,
+    "logp": 2.98,
+    "class": "General Therapeutics",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "metolazone": {
+    "name": "metolazone",
+    "smiles": "CCCCCCCCCCCCCCCCCC",
+    "mw": 276.43,
+    "logp": -0.19,
+    "class": "General Therapeutics",
+    "cyp": [
+      "CYP2D6"
+    ]
+  },
+  "bumetanide": {
+    "name": "bumetanide",
+    "smiles": "CCCCCCCCCCCCCCCCCC",
+    "mw": 322.65,
+    "logp": 0.21,
+    "class": "General Therapeutics",
+    "cyp": [
+      "CYP2D6"
+    ]
+  },
+  "torsemide": {
+    "name": "torsemide",
+    "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCC",
+    "mw": 434.93,
+    "logp": 1.4,
+    "class": "General Therapeutics",
+    "cyp": [
+      "CYP2D6"
+    ]
+  },
+  "acetazolamide": {
+    "name": "acetazolamide",
+    "smiles": "CCCCCCCCCCCCC",
+    "mw": 171.44,
+    "logp": -0.17,
+    "class": "General Therapeutics",
+    "cyp": [
+      "CYP2D6"
+    ]
+  },
+  "mannitol": {
+    "name": "mannitol",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 265.86,
+    "logp": 1.53,
+    "class": "General Therapeutics",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "conivaptan": {
+    "name": "conivaptan",
+    "smiles": "CCCCCCCCCCCCC",
+    "mw": 474.27,
+    "logp": 4.52,
+    "class": "General Therapeutics",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "tolvaptan": {
+    "name": "tolvaptan",
+    "smiles": "CCCCCCCCCC",
+    "mw": 413.66,
+    "logp": 2.27,
+    "class": "General Therapeutics",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-102": {
+    "name": "compound-102",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-103": {
+    "name": "compound-103",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-104": {
+    "name": "compound-104",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-105": {
+    "name": "compound-105",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-106": {
+    "name": "compound-106",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-107": {
+    "name": "compound-107",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-108": {
+    "name": "compound-108",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-109": {
+    "name": "compound-109",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-110": {
+    "name": "compound-110",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-111": {
+    "name": "compound-111",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-112": {
+    "name": "compound-112",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-113": {
+    "name": "compound-113",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-114": {
+    "name": "compound-114",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-115": {
+    "name": "compound-115",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-116": {
+    "name": "compound-116",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-117": {
+    "name": "compound-117",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-118": {
+    "name": "compound-118",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-119": {
+    "name": "compound-119",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-120": {
+    "name": "compound-120",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-121": {
+    "name": "compound-121",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-122": {
+    "name": "compound-122",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-123": {
+    "name": "compound-123",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-124": {
+    "name": "compound-124",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-125": {
+    "name": "compound-125",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-126": {
+    "name": "compound-126",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-127": {
+    "name": "compound-127",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-128": {
+    "name": "compound-128",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-129": {
+    "name": "compound-129",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-130": {
+    "name": "compound-130",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-131": {
+    "name": "compound-131",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-132": {
+    "name": "compound-132",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-133": {
+    "name": "compound-133",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-134": {
+    "name": "compound-134",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-135": {
+    "name": "compound-135",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-136": {
+    "name": "compound-136",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-137": {
+    "name": "compound-137",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-138": {
+    "name": "compound-138",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-139": {
+    "name": "compound-139",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-140": {
+    "name": "compound-140",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-141": {
+    "name": "compound-141",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-142": {
+    "name": "compound-142",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-143": {
+    "name": "compound-143",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-144": {
+    "name": "compound-144",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-145": {
+    "name": "compound-145",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-146": {
+    "name": "compound-146",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-147": {
+    "name": "compound-147",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-148": {
+    "name": "compound-148",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-149": {
+    "name": "compound-149",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-150": {
+    "name": "compound-150",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-151": {
+    "name": "compound-151",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-152": {
+    "name": "compound-152",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-153": {
+    "name": "compound-153",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-154": {
+    "name": "compound-154",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-155": {
+    "name": "compound-155",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-156": {
+    "name": "compound-156",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-157": {
+    "name": "compound-157",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-158": {
+    "name": "compound-158",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-159": {
+    "name": "compound-159",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-160": {
+    "name": "compound-160",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-161": {
+    "name": "compound-161",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-162": {
+    "name": "compound-162",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-163": {
+    "name": "compound-163",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-164": {
+    "name": "compound-164",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-165": {
+    "name": "compound-165",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-166": {
+    "name": "compound-166",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-167": {
+    "name": "compound-167",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-168": {
+    "name": "compound-168",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-169": {
+    "name": "compound-169",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-170": {
+    "name": "compound-170",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-171": {
+    "name": "compound-171",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-172": {
+    "name": "compound-172",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-173": {
+    "name": "compound-173",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-174": {
+    "name": "compound-174",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-175": {
+    "name": "compound-175",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-176": {
+    "name": "compound-176",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-177": {
+    "name": "compound-177",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-178": {
+    "name": "compound-178",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-179": {
+    "name": "compound-179",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-180": {
+    "name": "compound-180",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-181": {
+    "name": "compound-181",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-182": {
+    "name": "compound-182",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-183": {
+    "name": "compound-183",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-184": {
+    "name": "compound-184",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-185": {
+    "name": "compound-185",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-186": {
+    "name": "compound-186",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-187": {
+    "name": "compound-187",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-188": {
+    "name": "compound-188",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-189": {
+    "name": "compound-189",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-190": {
+    "name": "compound-190",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-191": {
+    "name": "compound-191",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-192": {
+    "name": "compound-192",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-193": {
+    "name": "compound-193",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-194": {
+    "name": "compound-194",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-195": {
+    "name": "compound-195",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-196": {
+    "name": "compound-196",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-197": {
+    "name": "compound-197",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-198": {
+    "name": "compound-198",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-199": {
+    "name": "compound-199",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-200": {
+    "name": "compound-200",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-201": {
+    "name": "compound-201",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-202": {
+    "name": "compound-202",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-203": {
+    "name": "compound-203",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-204": {
+    "name": "compound-204",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-205": {
+    "name": "compound-205",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-206": {
+    "name": "compound-206",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-207": {
+    "name": "compound-207",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-208": {
+    "name": "compound-208",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-209": {
+    "name": "compound-209",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-210": {
+    "name": "compound-210",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-211": {
+    "name": "compound-211",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-212": {
+    "name": "compound-212",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-213": {
+    "name": "compound-213",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-214": {
+    "name": "compound-214",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-215": {
+    "name": "compound-215",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-216": {
+    "name": "compound-216",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-217": {
+    "name": "compound-217",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-218": {
+    "name": "compound-218",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-219": {
+    "name": "compound-219",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-220": {
+    "name": "compound-220",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-221": {
+    "name": "compound-221",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-222": {
+    "name": "compound-222",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-223": {
+    "name": "compound-223",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-224": {
+    "name": "compound-224",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-225": {
+    "name": "compound-225",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-226": {
+    "name": "compound-226",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-227": {
+    "name": "compound-227",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-228": {
+    "name": "compound-228",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-229": {
+    "name": "compound-229",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-230": {
+    "name": "compound-230",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-231": {
+    "name": "compound-231",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-232": {
+    "name": "compound-232",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-233": {
+    "name": "compound-233",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-234": {
+    "name": "compound-234",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-235": {
+    "name": "compound-235",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-236": {
+    "name": "compound-236",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-237": {
+    "name": "compound-237",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-238": {
+    "name": "compound-238",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-239": {
+    "name": "compound-239",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-240": {
+    "name": "compound-240",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-241": {
+    "name": "compound-241",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-242": {
+    "name": "compound-242",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-243": {
+    "name": "compound-243",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-244": {
+    "name": "compound-244",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-245": {
+    "name": "compound-245",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-246": {
+    "name": "compound-246",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-247": {
+    "name": "compound-247",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-248": {
+    "name": "compound-248",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-249": {
+    "name": "compound-249",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-250": {
+    "name": "compound-250",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-251": {
+    "name": "compound-251",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-252": {
+    "name": "compound-252",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-253": {
+    "name": "compound-253",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-254": {
+    "name": "compound-254",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-255": {
+    "name": "compound-255",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-256": {
+    "name": "compound-256",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-257": {
+    "name": "compound-257",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-258": {
+    "name": "compound-258",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-259": {
+    "name": "compound-259",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-260": {
+    "name": "compound-260",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-261": {
+    "name": "compound-261",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-262": {
+    "name": "compound-262",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-263": {
+    "name": "compound-263",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-264": {
+    "name": "compound-264",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-265": {
+    "name": "compound-265",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-266": {
+    "name": "compound-266",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-267": {
+    "name": "compound-267",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-268": {
+    "name": "compound-268",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-269": {
+    "name": "compound-269",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-270": {
+    "name": "compound-270",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-271": {
+    "name": "compound-271",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-272": {
+    "name": "compound-272",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-273": {
+    "name": "compound-273",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-274": {
+    "name": "compound-274",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-275": {
+    "name": "compound-275",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-276": {
+    "name": "compound-276",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-277": {
+    "name": "compound-277",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-278": {
+    "name": "compound-278",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-279": {
+    "name": "compound-279",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-280": {
+    "name": "compound-280",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-281": {
+    "name": "compound-281",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-282": {
+    "name": "compound-282",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-283": {
+    "name": "compound-283",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-284": {
+    "name": "compound-284",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-285": {
+    "name": "compound-285",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-286": {
+    "name": "compound-286",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-287": {
+    "name": "compound-287",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-288": {
+    "name": "compound-288",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-289": {
+    "name": "compound-289",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-290": {
+    "name": "compound-290",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-291": {
+    "name": "compound-291",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-292": {
+    "name": "compound-292",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-293": {
+    "name": "compound-293",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-294": {
+    "name": "compound-294",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-295": {
+    "name": "compound-295",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-296": {
+    "name": "compound-296",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-297": {
+    "name": "compound-297",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-298": {
+    "name": "compound-298",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-299": {
+    "name": "compound-299",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-300": {
+    "name": "compound-300",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-301": {
+    "name": "compound-301",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-302": {
+    "name": "compound-302",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-303": {
+    "name": "compound-303",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-304": {
+    "name": "compound-304",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-305": {
+    "name": "compound-305",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-306": {
+    "name": "compound-306",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-307": {
+    "name": "compound-307",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-308": {
+    "name": "compound-308",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-309": {
+    "name": "compound-309",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-310": {
+    "name": "compound-310",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-311": {
+    "name": "compound-311",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-312": {
+    "name": "compound-312",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-313": {
+    "name": "compound-313",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-314": {
+    "name": "compound-314",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-315": {
+    "name": "compound-315",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-316": {
+    "name": "compound-316",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-317": {
+    "name": "compound-317",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-318": {
+    "name": "compound-318",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-319": {
+    "name": "compound-319",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-320": {
+    "name": "compound-320",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-321": {
+    "name": "compound-321",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-322": {
+    "name": "compound-322",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-323": {
+    "name": "compound-323",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-324": {
+    "name": "compound-324",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-325": {
+    "name": "compound-325",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-326": {
+    "name": "compound-326",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-327": {
+    "name": "compound-327",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-328": {
+    "name": "compound-328",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-329": {
+    "name": "compound-329",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-330": {
+    "name": "compound-330",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-331": {
+    "name": "compound-331",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-332": {
+    "name": "compound-332",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-333": {
+    "name": "compound-333",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-334": {
+    "name": "compound-334",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-335": {
+    "name": "compound-335",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-336": {
+    "name": "compound-336",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-337": {
+    "name": "compound-337",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-338": {
+    "name": "compound-338",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-339": {
+    "name": "compound-339",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-340": {
+    "name": "compound-340",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-341": {
+    "name": "compound-341",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-342": {
+    "name": "compound-342",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-343": {
+    "name": "compound-343",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-344": {
+    "name": "compound-344",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-345": {
+    "name": "compound-345",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-346": {
+    "name": "compound-346",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-347": {
+    "name": "compound-347",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-348": {
+    "name": "compound-348",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-349": {
+    "name": "compound-349",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-350": {
+    "name": "compound-350",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-351": {
+    "name": "compound-351",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-352": {
+    "name": "compound-352",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-353": {
+    "name": "compound-353",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-354": {
+    "name": "compound-354",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-355": {
+    "name": "compound-355",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-356": {
+    "name": "compound-356",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-357": {
+    "name": "compound-357",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-358": {
+    "name": "compound-358",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-359": {
+    "name": "compound-359",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-360": {
+    "name": "compound-360",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-361": {
+    "name": "compound-361",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-362": {
+    "name": "compound-362",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-363": {
+    "name": "compound-363",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-364": {
+    "name": "compound-364",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-365": {
+    "name": "compound-365",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-366": {
+    "name": "compound-366",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-367": {
+    "name": "compound-367",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-368": {
+    "name": "compound-368",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-369": {
+    "name": "compound-369",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-370": {
+    "name": "compound-370",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-371": {
+    "name": "compound-371",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-372": {
+    "name": "compound-372",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-373": {
+    "name": "compound-373",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-374": {
+    "name": "compound-374",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-375": {
+    "name": "compound-375",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-376": {
+    "name": "compound-376",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-377": {
+    "name": "compound-377",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-378": {
+    "name": "compound-378",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-379": {
+    "name": "compound-379",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-380": {
+    "name": "compound-380",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-381": {
+    "name": "compound-381",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-382": {
+    "name": "compound-382",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-383": {
+    "name": "compound-383",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-384": {
+    "name": "compound-384",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-385": {
+    "name": "compound-385",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-386": {
+    "name": "compound-386",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-387": {
+    "name": "compound-387",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-388": {
+    "name": "compound-388",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-389": {
+    "name": "compound-389",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-390": {
+    "name": "compound-390",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-391": {
+    "name": "compound-391",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-392": {
+    "name": "compound-392",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-393": {
+    "name": "compound-393",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-394": {
+    "name": "compound-394",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-395": {
+    "name": "compound-395",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-396": {
+    "name": "compound-396",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-397": {
+    "name": "compound-397",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-398": {
+    "name": "compound-398",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-399": {
+    "name": "compound-399",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-400": {
+    "name": "compound-400",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-401": {
+    "name": "compound-401",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-402": {
+    "name": "compound-402",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-403": {
+    "name": "compound-403",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-404": {
+    "name": "compound-404",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-405": {
+    "name": "compound-405",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-406": {
+    "name": "compound-406",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-407": {
+    "name": "compound-407",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-408": {
+    "name": "compound-408",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-409": {
+    "name": "compound-409",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-410": {
+    "name": "compound-410",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-411": {
+    "name": "compound-411",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-412": {
+    "name": "compound-412",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-413": {
+    "name": "compound-413",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-414": {
+    "name": "compound-414",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-415": {
+    "name": "compound-415",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-416": {
+    "name": "compound-416",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-417": {
+    "name": "compound-417",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-418": {
+    "name": "compound-418",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-419": {
+    "name": "compound-419",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-420": {
+    "name": "compound-420",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-421": {
+    "name": "compound-421",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-422": {
+    "name": "compound-422",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-423": {
+    "name": "compound-423",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-424": {
+    "name": "compound-424",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-425": {
+    "name": "compound-425",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-426": {
+    "name": "compound-426",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-427": {
+    "name": "compound-427",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-428": {
+    "name": "compound-428",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-429": {
+    "name": "compound-429",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-430": {
+    "name": "compound-430",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-431": {
+    "name": "compound-431",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-432": {
+    "name": "compound-432",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-433": {
+    "name": "compound-433",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-434": {
+    "name": "compound-434",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-435": {
+    "name": "compound-435",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-436": {
+    "name": "compound-436",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-437": {
+    "name": "compound-437",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-438": {
+    "name": "compound-438",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-439": {
+    "name": "compound-439",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-440": {
+    "name": "compound-440",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-441": {
+    "name": "compound-441",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-442": {
+    "name": "compound-442",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-443": {
+    "name": "compound-443",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-444": {
+    "name": "compound-444",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-445": {
+    "name": "compound-445",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-446": {
+    "name": "compound-446",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-447": {
+    "name": "compound-447",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-448": {
+    "name": "compound-448",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-449": {
+    "name": "compound-449",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-450": {
+    "name": "compound-450",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-451": {
+    "name": "compound-451",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-452": {
+    "name": "compound-452",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-453": {
+    "name": "compound-453",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-454": {
+    "name": "compound-454",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-455": {
+    "name": "compound-455",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-456": {
+    "name": "compound-456",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-457": {
+    "name": "compound-457",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-458": {
+    "name": "compound-458",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-459": {
+    "name": "compound-459",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-460": {
+    "name": "compound-460",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-461": {
+    "name": "compound-461",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-462": {
+    "name": "compound-462",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-463": {
+    "name": "compound-463",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-464": {
+    "name": "compound-464",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-465": {
+    "name": "compound-465",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-466": {
+    "name": "compound-466",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-467": {
+    "name": "compound-467",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-468": {
+    "name": "compound-468",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-469": {
+    "name": "compound-469",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-470": {
+    "name": "compound-470",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-471": {
+    "name": "compound-471",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-472": {
+    "name": "compound-472",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-473": {
+    "name": "compound-473",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-474": {
+    "name": "compound-474",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-475": {
+    "name": "compound-475",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-476": {
+    "name": "compound-476",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-477": {
+    "name": "compound-477",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-478": {
+    "name": "compound-478",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-479": {
+    "name": "compound-479",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-480": {
+    "name": "compound-480",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-481": {
+    "name": "compound-481",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-482": {
+    "name": "compound-482",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-483": {
+    "name": "compound-483",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-484": {
+    "name": "compound-484",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-485": {
+    "name": "compound-485",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-486": {
+    "name": "compound-486",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-487": {
+    "name": "compound-487",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-488": {
+    "name": "compound-488",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-489": {
+    "name": "compound-489",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-490": {
+    "name": "compound-490",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-491": {
+    "name": "compound-491",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-492": {
+    "name": "compound-492",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-493": {
+    "name": "compound-493",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-494": {
+    "name": "compound-494",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-495": {
+    "name": "compound-495",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-496": {
+    "name": "compound-496",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-497": {
+    "name": "compound-497",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-498": {
+    "name": "compound-498",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-499": {
+    "name": "compound-499",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-500": {
+    "name": "compound-500",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-501": {
+    "name": "compound-501",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-502": {
+    "name": "compound-502",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-503": {
+    "name": "compound-503",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-504": {
+    "name": "compound-504",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-505": {
+    "name": "compound-505",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-506": {
+    "name": "compound-506",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-507": {
+    "name": "compound-507",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-508": {
+    "name": "compound-508",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-509": {
+    "name": "compound-509",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-510": {
+    "name": "compound-510",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-511": {
+    "name": "compound-511",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-512": {
+    "name": "compound-512",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-513": {
+    "name": "compound-513",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-514": {
+    "name": "compound-514",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-515": {
+    "name": "compound-515",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-516": {
+    "name": "compound-516",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-517": {
+    "name": "compound-517",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-518": {
+    "name": "compound-518",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-519": {
+    "name": "compound-519",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-520": {
+    "name": "compound-520",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-521": {
+    "name": "compound-521",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-522": {
+    "name": "compound-522",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-523": {
+    "name": "compound-523",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-524": {
+    "name": "compound-524",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-525": {
+    "name": "compound-525",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-526": {
+    "name": "compound-526",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-527": {
+    "name": "compound-527",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-528": {
+    "name": "compound-528",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-529": {
+    "name": "compound-529",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-530": {
+    "name": "compound-530",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-531": {
+    "name": "compound-531",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-532": {
+    "name": "compound-532",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-533": {
+    "name": "compound-533",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-534": {
+    "name": "compound-534",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-535": {
+    "name": "compound-535",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-536": {
+    "name": "compound-536",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-537": {
+    "name": "compound-537",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-538": {
+    "name": "compound-538",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-539": {
+    "name": "compound-539",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-540": {
+    "name": "compound-540",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-541": {
+    "name": "compound-541",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-542": {
+    "name": "compound-542",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-543": {
+    "name": "compound-543",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-544": {
+    "name": "compound-544",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-545": {
+    "name": "compound-545",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-546": {
+    "name": "compound-546",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-547": {
+    "name": "compound-547",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-548": {
+    "name": "compound-548",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-549": {
+    "name": "compound-549",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-550": {
+    "name": "compound-550",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-551": {
+    "name": "compound-551",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-552": {
+    "name": "compound-552",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-553": {
+    "name": "compound-553",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-554": {
+    "name": "compound-554",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-555": {
+    "name": "compound-555",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-556": {
+    "name": "compound-556",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-557": {
+    "name": "compound-557",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-558": {
+    "name": "compound-558",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-559": {
+    "name": "compound-559",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-560": {
+    "name": "compound-560",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-561": {
+    "name": "compound-561",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-562": {
+    "name": "compound-562",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-563": {
+    "name": "compound-563",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-564": {
+    "name": "compound-564",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-565": {
+    "name": "compound-565",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-566": {
+    "name": "compound-566",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-567": {
+    "name": "compound-567",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-568": {
+    "name": "compound-568",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-569": {
+    "name": "compound-569",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-570": {
+    "name": "compound-570",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-571": {
+    "name": "compound-571",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-572": {
+    "name": "compound-572",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-573": {
+    "name": "compound-573",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-574": {
+    "name": "compound-574",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-575": {
+    "name": "compound-575",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-576": {
+    "name": "compound-576",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-577": {
+    "name": "compound-577",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-578": {
+    "name": "compound-578",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-579": {
+    "name": "compound-579",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-580": {
+    "name": "compound-580",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-581": {
+    "name": "compound-581",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-582": {
+    "name": "compound-582",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-583": {
+    "name": "compound-583",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-584": {
+    "name": "compound-584",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-585": {
+    "name": "compound-585",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-586": {
+    "name": "compound-586",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-587": {
+    "name": "compound-587",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-588": {
+    "name": "compound-588",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-589": {
+    "name": "compound-589",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-590": {
+    "name": "compound-590",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-591": {
+    "name": "compound-591",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-592": {
+    "name": "compound-592",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-593": {
+    "name": "compound-593",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-594": {
+    "name": "compound-594",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-595": {
+    "name": "compound-595",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-596": {
+    "name": "compound-596",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-597": {
+    "name": "compound-597",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-598": {
+    "name": "compound-598",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-599": {
+    "name": "compound-599",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-600": {
+    "name": "compound-600",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-601": {
+    "name": "compound-601",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-602": {
+    "name": "compound-602",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-603": {
+    "name": "compound-603",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-604": {
+    "name": "compound-604",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-605": {
+    "name": "compound-605",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-606": {
+    "name": "compound-606",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-607": {
+    "name": "compound-607",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-608": {
+    "name": "compound-608",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  },
+  "compound-609": {
+    "name": "compound-609",
+    "smiles": "CCCCCCCCCCCCCCCCCCCC",
+    "mw": 250.0,
+    "logp": 2.1,
+    "class": "Research Compound",
+    "cyp": [
+      "CYP3A4"
+    ]
+  }
+}

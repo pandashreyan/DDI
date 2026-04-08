@@ -1,0 +1,29 @@
+2026-03-26 01:52:37,098 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5005
+ * Running on http://10.5.72.114:5005
+2026-03-26 01:52:37,098 INFO: [33mPress CTRL+C to quit[0m
+2026-03-26 01:53:17,818 INFO: Engine started on port 5005 (Waitress)
+2026-03-26 01:53:17,825 INFO: Serving on http://0.0.0.0:5005
+2026-03-26 01:54:19,516 INFO: Engine started on port 5005 (Waitress)
+2026-03-26 01:54:19,523 INFO: Serving on http://0.0.0.0:5005
+2026-03-30 12:06:17,327 INFO: Engine started on port 5005 (Waitress)
+2026-03-30 12:06:17,357 INFO: Serving on http://0.0.0.0:5005
+2026-03-30 14:22:49,774 INFO: Engine started on port 5005 (Waitress)
+2026-03-30 14:22:49,792 INFO: Serving on http://0.0.0.0:5005
+2026-03-30 14:56:02,855 INFO: Engine started on port 5005 (Waitress)
+2026-03-30 14:56:02,864 INFO: Serving on http://0.0.0.0:5005
+2026-03-30 20:23:09,445 INFO: Engine started on port 5005 (Waitress)
+2026-03-30 20:23:09,451 INFO: Serving on http://0.0.0.0:5005
+2026-03-30 20:37:45,494 INFO: Engine started on port 5005 (Waitress)
+2026-03-30 20:37:45,501 INFO: Serving on http://0.0.0.0:5005
+2026-03-30 21:55:28,046 INFO: Engine started on port 5005 (Waitress)
+2026-03-30 21:55:28,055 INFO: Serving on http://0.0.0.0:5005
+2026-03-30 22:12:36,405 INFO: Engine started on port 5005 (Waitress)
+2026-03-30 22:12:36,414 INFO: Serving on http://0.0.0.0:5005
+2026-03-30 22:17:44,048 INFO: Engine started on port 5005 (Waitress)
+2026-03-30 22:17:44,055 INFO: Serving on http://0.0.0.0:5005
+2026-03-30 22:25:11,143 INFO: Engine started on port 5005 (Waitress)
+2026-03-30 22:25:11,151 INFO: Serving on http://0.0.0.0:5005
+2026-03-30 22:30:18,090 INFO: Engine started on port 5005 (Waitress)
+2026-03-30 22:30:18,099 INFO: Serving on http://0.0.0.0:5005

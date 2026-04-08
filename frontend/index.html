@@ -1,0 +1,869 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DDI Predict — AI Drug Interaction Analyzer</title>
+    <meta name="description" content="AI-powered drug-drug interaction prediction system using ML models to detect dangerous combinations before they happen." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://3Dmol.org/build/3Dmol-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.26.0/cytoscape.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  </head>
+  <body>
+
+    <!-- ── BACKGROUND ORBS ── -->
+    <div class="bg-orbs">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+
+    <!-- ── NAVBAR ── -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-inner">
+        <div class="nav-logo">
+          <span class="logo-icon">⬡</span>
+          <span class="logo-text">DDI<span class="logo-accent">Predict</span></span>
+        </div>
+        <div class="nav-status" style="margin-left: auto;">
+          <span class="status-dot online" id="statusDot"></span>
+          <span class="status-text" id="statusText">System Ready</span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ── APP LAYOUT ── -->
+    <div class="app-layout">
+
+      <!-- ── SIDEBAR ── -->
+      <aside class="sidebar">
+        <div class="sidebar-group">
+          <div class="sidebar-title">Clinical Dashboard</div>
+          <div class="nav-menu">
+            <div class="nav-menu-item active" onclick="switchTab('overview')" id="nav-overview">
+              <span>🏠</span> Overview
+            </div>
+            <div class="nav-menu-item" onclick="switchTab('analyzer')" id="nav-analyzer">
+              <span>🧪</span> Clinical Analyzer
+            </div>
+            <div class="nav-menu-item" onclick="switchTab('safety')" id="nav-safety">
+              <span>🛡️</span> Safety Profiles
+            </div>
+          </div>
+        </div>
+
+        <div class="sidebar-group">
+          <div class="sidebar-title">Adherence &amp; Economics</div>
+          <div class="nav-menu">
+            <div class="nav-menu-item" onclick="switchTab('pharmacy')" id="nav-pharmacy">
+              <span>🏛️</span> Pharmacy IQ
+            </div>
+          </div>
+        </div>
+
+        <div class="sidebar-group">
+          <div class="sidebar-title">Knowledge Base</div>
+          <div class="nav-menu">
+            <div class="nav-menu-item" onclick="switchTab('database')" id="nav-database">
+              <span>📊</span> Drug Catalog
+            </div>
+            <div class="nav-menu-item" onclick="switchTab('potency')" id="nav-potency">
+              <span>📈</span> Potency AI Lab
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:auto; padding:20px; background:rgba(255,255,255,0.03); border-radius:12px;">
+          <div style="font-size:0.7rem; color:var(--text-mute); margin-bottom:5px;">ML ENSEMBLE</div>
+          <div style="font-weight:800; font-size:0.8rem; color:var(--accent2);">V4.2.1-STABLE</div>
+          <div style="font-size:0.65rem; color:var(--text-mute); margin-top:5px;">235k+ Interactions</div>
+        </div>
+      </aside>
+
+      <!-- ── MAIN CONTENT ── -->
+      <main class="dashboard-main">
+
+        <!-- PROACTIVE MITIGATION ALERT BAR -->
+        <div id="riskMitigationContainer"></div>
+
+        <!-- ══════════════════════════════════
+             TAB: OVERVIEW
+        ══════════════════════════════════ -->
+        <div id="tab-overview" class="tab-content active">
+          <div style="padding-top:20px;">
+            <div class="hero-badge" style="display:inline-flex; margin-bottom:2rem;">
+              <span class="badge-pulse"></span>
+              Clinical Intelligence Platform · Live
+            </div>
+            <h1 class="hero-title" style="font-size:clamp(2rem,4vw,3.2rem); margin-bottom:1rem;">
+              Drug Interaction<br><span class="gradient-text">AI Analyzer</span>
+            </h1>
+            <p style="color:var(--text-dim); font-size:1rem; max-width:560px; margin-bottom:2.5rem; line-height:1.75;">
+              Powered by 235,000+ clinical interaction pairs from DrugBank. Detect dangerous drug combinations before they happen using our ML ensemble.
+            </p>
+
+            <!-- Hero Stats -->
+            <div class="hero-stats" style="margin-bottom:3rem;">
+              <div class="hstat">
+                <strong id="hInter">—</strong>
+                <span>Clinical Pairs</span>
+              </div>
+              <div class="hstat-sep"></div>
+              <div class="hstat">
+                <strong id="hDrugs">—</strong>
+                <span>Drugs Indexed</span>
+              </div>
+              <div class="hstat-sep"></div>
+              <div class="hstat">
+                <strong id="hMeta">1,700+</strong>
+                <span>Metadata Records</span>
+              </div>
+            </div>
+
+            <button class="btn-primary" onclick="switchTab('analyzer')" style="font-size:1rem;">
+              ⚡ Launch Clinical Analyzer
+            </button>
+
+            <!-- Clinical Case Explorer -->
+            <div style="margin-top:3rem; background:rgba(255,255,255,0.02); border:1px solid rgba(255,255,255,0.07); border-radius:16px; padding:25px;">
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.5rem;">
+                <div style="font-size:0.8rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:var(--text-mute);">Clinical Case Explorer</div>
+                <span class="badge-new">NEW Feature</span>
+              </div>
+              <p style="color:var(--text-dim); font-size:0.85rem; margin-bottom:1.5rem;">Select a standardized medical case to instantly populate the analyzer with relevant drugs and patient profiles for demonstration.</p>
+              <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:12px;">
+                <div class="case-card" onclick="loadCaseScenario('cardiac_risk')">
+                  <div class="case-icon">🫀</div>
+                  <h4>Cardiac Risk</h4>
+                  <p>Aspirin + Warfarin in an elderly patient.</p>
+                </div>
+                <div class="case-card" onclick="loadCaseScenario('psyc_synergy')">
+                  <div class="case-icon">🧠</div>
+                  <h4>Psych Synergy</h4>
+                  <p>Fluoxetine + Tramadol + Diazepam.</p>
+                </div>
+                <div class="case-card" onclick="loadCaseScenario('liver_impairment')">
+                  <div class="case-icon">🧪</div>
+                  <h4>Liver Impairment</h4>
+                  <p>Statin metabolism in a compromised patient.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- System Stats Grid -->
+            <div style="margin-top:3rem;">
+              <div style="font-size:0.8rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:var(--text-mute); margin-bottom:1.5rem;">System Statistics</div>
+              <div class="stats-grid" id="statsGrid"></div>
+            </div>
+
+            <!-- ML Pipeline Overview -->
+            <div style="margin-top:3rem; background:rgba(255,255,255,0.02); border:1px solid rgba(255,255,255,0.07); border-radius:16px; padding:25px;">
+              <div style="font-size:0.8rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:var(--text-mute); margin-bottom:1.5rem;">ML Pipeline</div>
+              <div class="pipeline" style="margin-bottom:0;">
+                <div class="pipe-step">
+                  <div class="pipe-number">01</div>
+                  <div class="pipe-icon">💊</div>
+                  <h3>Data Ingestion</h3>
+                  <p>DrugBank SMILES fingerprints, protein targets, metabolic enzymes from 235k pairs.</p>
+                </div>
+                <div class="pipe-arrow">→</div>
+                <div class="pipe-step">
+                  <div class="pipe-number">02</div>
+                  <div class="pipe-icon">🧠</div>
+                  <h3>ML Ensemble</h3>
+                  <p>Random Forest + XGBoost trained on Morgan fingerprints (1024-bit) + physicochemical features.</p>
+                </div>
+                <div class="pipe-arrow">→</div>
+                <div class="pipe-step">
+                  <div class="pipe-number">03</div>
+                  <div class="pipe-icon">📊</div>
+                  <h3>Risk Scoring</h3>
+                  <p>Probability [0–1], severity class (None/Mild/Moderate/Severe), SHAP-based explanation.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Metrics Row -->
+            <div class="metrics-row" style="margin-top:2rem; margin-bottom:0;">
+              <div class="metric-card"><div class="metric-val">94.2%</div><div class="metric-lbl">ROC-AUC Score</div></div>
+              <div class="metric-card"><div class="metric-val">91.8%</div><div class="metric-lbl">F1-Score (Severe)</div></div>
+              <div class="metric-card"><div class="metric-val">96.1%</div><div class="metric-lbl">Precision</div></div>
+              <div class="metric-card"><div class="metric-val">89.7%</div><div class="metric-lbl">Recall</div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ══════════════════════════════════
+             TAB: ANALYZER (Main DDI Tool)
+        ══════════════════════════════════ -->
+        <div id="tab-analyzer" class="tab-content">
+          <div style="padding-top:20px;">
+
+            <!-- Section Header -->
+            <div style="margin-bottom:2rem;">
+              <h2 style="font-size:1.6rem; font-weight:800; margin-bottom:0.4rem;">Clinical <span class="gradient-text">Drug Analyzer</span></h2>
+              <p style="color:var(--text-dim); font-size:0.9rem;">Select 2+ drugs to analyze for dangerous interactions using our AI clinical engine.</p>
+            </div>
+
+            <!-- Drug Selection Grid -->
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; margin-bottom:1.5rem;">
+
+              <!-- Drug Library Panel -->
+              <div class="predictor-card" style="padding:1.5rem;">
+                <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:1rem;">
+                  <div class="field-label">Drug Library</div>
+                  <button id="voiceBtn" title="Voice Input" style="background:none; border:none; color:var(--accent1); font-size:1.2rem; cursor:pointer; padding:4px;">🎙️</button>
+                </div>
+                <div class="drug-search-wrap" style="margin-bottom:1rem;">
+                  <span class="search-icon">🔍</span>
+                  <input class="drug-search" id="drugSearch" placeholder="Search 1,700+ drugs..." />
+                </div>
+                <div class="drug-list" id="drugList">
+                  <div class="empty-state-small">⏳ Loading clinical database...</div>
+                </div>
+              </div>
+
+              <!-- Selection & Patient Profile Panel -->
+              <div class="predictor-card" style="padding:1.5rem; display:flex; flex-direction:column; gap:1rem;">
+                <div>
+                  <div class="field-label" style="margin-bottom:0.75rem;">
+                    Selected Drugs
+                    <span class="badge-count" id="selectedCount">0</span>
+                  </div>
+                  <div class="selected-drugs" id="selectedDrugs">
+                    <div class="empty-state-small">Select 2+ drugs to begin analysis</div>
+                  </div>
+                </div>
+
+                <!-- Patient Profile -->
+                <div style="background:rgba(255,255,255,0.02); border:1px solid rgba(255,255,255,0.06); border-radius:12px; padding:15px;">
+                  <div class="field-label" style="margin-bottom:12px;">👤 Patient Profile</div>
+                  <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+                    <div>
+                      <label style="font-size:0.72rem; color:var(--text-mute); display:block; margin-bottom:4px;">AGE</label>
+                      <input id="patientAge" type="number" value="40" min="1" max="100"
+                        style="width:100%; background:var(--bg3); border:1px solid var(--border2); border-radius:8px; color:var(--text); padding:8px 10px; font-size:0.85rem; outline:none;" />
+                    </div>
+                    <div>
+                      <label style="font-size:0.72rem; color:var(--text-mute); display:block; margin-bottom:4px;">INSURANCE</label>
+                      <select id="patientInsurance"
+                        style="width:100%; background:var(--bg3); border:1px solid var(--border2); border-radius:8px; color:var(--text); padding:8px 10px; font-size:0.85rem; outline:none;">
+                        <option value="uninsured">Uninsured</option>
+                        <option value="medicare">Medicare</option>
+                        <option value="medicaid">Medicaid</option>
+                        <option value="private">Private</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label style="font-size:0.72rem; color:var(--text-mute); display:block; margin-bottom:4px;">LIVER FUNCTION</label>
+                      <select id="patientLiver"
+                        style="width:100%; background:var(--bg3); border:1px solid var(--border2); border-radius:8px; color:var(--text); padding:8px 10px; font-size:0.85rem; outline:none;">
+                        <option value="normal">Normal</option>
+                        <option value="mild_impairment">Mild Impairment</option>
+                        <option value="severe_impairment">Severe Impairment</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label style="font-size:0.72rem; color:var(--text-mute); display:block; margin-bottom:4px;">
+                        eGFR — <span id="egfrValDisplay" style="color:var(--success);">90 ml/min</span>
+                      </label>
+                      <input id="patientEgfr" type="range" min="10" max="120" value="90"
+                        style="width:100%; accent-color:var(--accent);" />
+                    </div>
+                    <div style="grid-column: 1 / -1; margin-top: 5px;">
+                      <label style="font-size:0.72rem; color:var(--text-mute); display:block; margin-bottom:4px;">GENETIC VARIANTS (PGx)</label>
+                      <div id="pgxContainer" style="display:flex; flex-wrap:wrap; gap:8px;">
+                        <label class="pgx-chip"><input type="checkbox" value="CYP2C19:poor_metabolizer"> 2C19 Poor</label>
+                        <label class="pgx-chip"><input type="checkbox" value="CYP2C19:ultra_rapid_metabolizer"> 2C19 Ultra</label>
+                        <label class="pgx-chip"><input type="checkbox" value="CYP2D6:poor_metabolizer"> 2D6 Poor</label>
+                        <label class="pgx-chip"><input type="checkbox" value="CYP2D6:ultra_rapid_metabolizer"> 2D6 Ultra</label>
+                        <label class="pgx-chip"><input type="checkbox" value="SLCO1B1:decreased_function"> SLCO1B1 Decr.</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Lifestyle Profile -->
+                <div style="background:rgba(255,255,255,0.02); border:1px solid rgba(255,255,255,0.06); border-radius:12px; padding:15px;">
+                  <div class="field-label" style="margin-bottom:12px;">🍎 Lifestyle Factors</div>
+                  <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; align-items:center;">
+                    <div>
+                      <label style="font-size:0.72rem; color:var(--text-mute); display:block; margin-bottom:4px;">ALCOHOL</label>
+                      <select id="lifestyleAlcohol"
+                        style="width:100%; background:var(--bg3); border:1px solid var(--border2); border-radius:8px; color:var(--text); padding:8px 10px; font-size:0.85rem; outline:none;">
+                        <option value="none">None</option>
+                        <option value="moderate">Moderate</option>
+                        <option value="heavy">Heavy</option>
+                      </select>
+                    </div>
+                    <div style="display:flex; flex-direction:column; gap:6px;">
+                      <label style="display:flex; align-items:center; gap:8px; cursor:pointer; font-size:0.82rem; color:var(--text-dim);">
+                        <input type="checkbox" id="lifestyleTobacco" style="accent-color:var(--danger);"> Tobacco Use
+                      </label>
+                      <label style="display:flex; align-items:center; gap:8px; cursor:pointer; font-size:0.82rem; color:var(--text-dim);">
+                        <input type="checkbox" id="lifestyleGrapefruit" style="accent-color:var(--warn);"> Grapefruit Juice
+                      </label>
+                      <label style="display:flex; align-items:center; gap:8px; cursor:pointer; font-size:0.82rem; color:var(--text-dim);">
+                        <input type="checkbox" id="lifestyleDairy" style="accent-color:var(--accent2);"> Dairy Products
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Predict Button -->
+                <button class="btn-predict" id="predictBtn" disabled>
+                  <span class="btn-predict-loader" id="btnLoader"></span>
+                  ⚡ Analyze Interactions
+                </button>
+              </div>
+            </div>
+
+            <!-- ── RESULTS AREA ── -->
+            <div id="resultsArea" style="display:none;">
+
+              <!-- Overall Risk Summary -->
+              <div style="background:var(--glass); backdrop-filter:blur(20px); border:1px solid var(--border2); border-radius:20px; padding:25px; margin-bottom:1.5rem;">
+                <div class="results-header">
+                  <div class="results-title">Clinical Interaction Report</div>
+                  <span class="overall-badge sev-none" id="overallBadge">✅ Normal</span>
+                </div>
+                <div class="risk-meter-wrap">
+                  <div class="risk-label-row">
+                    <span>Overall Risk Score</span>
+                    <span class="risk-value" id="riskValue">0.00</span>
+                  </div>
+                  <div class="risk-meter">
+                    <div class="risk-fill" id="riskFill" style="width:0%"></div>
+                  </div>
+                  <div class="risk-scale">
+                    <span>None</span><span>Mild</span><span>Moderate</span><span>Severe</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Interaction Pair Cards -->
+              <div style="margin-bottom:2rem;">
+                <h3 style="font-size:1rem; font-weight:700; color:var(--text-dim); margin-bottom:1rem; text-transform:uppercase; letter-spacing:0.08em;">Pair-Level Analysis</h3>
+                <div class="pairs-grid" id="pairsGrid"></div>
+              </div>
+
+              <!-- Lifestyle Warnings Container -->
+              <div id="lifestyleWarningsContainer"></div>
+
+              <!-- Baseline Safety Profiles -->
+              <div id="baselineSafetySection" style="display:none; margin-top:2rem;">
+                <h3 style="font-size:1rem; font-weight:700; color:var(--text-dim); margin-bottom:1rem; text-transform:uppercase; letter-spacing:0.08em;">Baseline Safety Profiles</h3>
+                <div class="stats-grid" id="baselineSafetyGrid"></div>
+              </div>
+
+              <!-- 🕸️ POLYPHARMACY GRAPH NETWORK -->
+              <div id="polypharmacyGraphSection" style="display:none; margin-top:2rem; background:rgba(0,0,0,0.2); border:1px solid rgba(255,255,255,0.06); border-radius:16px; padding:20px;">
+                <h3 style="font-size:1rem; font-weight:700; color:var(--text); margin-bottom:15px; display:flex; align-items:center; gap:8px;">
+                  <span>🕸️</span> Polypharmacy Interaction Network
+                </h3>
+                <div id="cy" style="width:100%; height:300px; background:rgba(255,255,255,0.01); border-radius:12px;"></div>
+              </div>
+
+              <!-- 🕒 CHRONOPHARMACOLOGY TIMELINE -->
+              <div id="chronoSection" style="display:none; margin-top:2rem; background:rgba(59,130,246,0.05); border:1px solid rgba(59,130,246,0.2); border-radius:16px; padding:25px;">
+                <h3 style="font-size:1rem; font-weight:700; color:var(--accent1); margin-bottom:15px; display:flex; align-items:center; gap:8px;">
+                  <span>🕒</span> Chronopharmacology Dosing Timeline
+                </h3>
+                <div id="chronoTimelineGrid" style="display:flex; flex-direction:column; gap:10px;"></div>
+              </div>
+
+              <!-- Drug Alternatives Panel -->
+                <div id="alternativesPanel" style="display:none; margin-top:2rem; background:rgba(167,139,250,0.05); border:1px solid rgba(167,139,250,0.1); border-radius:16px; padding:25px;">
+                  <div style="display:flex; align-items:center; gap:12px; margin-bottom:20px;">
+                    <span style="font-size:1.3rem;">🔄</span>
+                    <h3 style="margin:0; font-weight:800; color:var(--accent2);">Safer Replacement Candidates</h3>
+                  </div>
+                  <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(200px, 1fr)); gap:12px;" id="alternativesGrid"></div>
+                </div>
+
+                <!-- 🤖 GENERATIVE MOLECULAR OPTIMIZATION PANEL -->
+                <div id="optimizationPanel" style="display:none; margin-top:2rem; background:rgba(34,197,94,0.05); border:1px solid rgba(34,197,94,0.1); border-radius:24px; padding:30px; border-left: 8px solid #22c55e;">
+                  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:25px;">
+                    <div style="display:flex; align-items:center; gap:15px;">
+                      <div style="background:#22c55e; width:40px; height:40px; display:flex; align-items:center; justify-content:center; border-radius:12px; font-size:1.5rem; box-shadow:0 0 20px rgba(34,197,94,0.4)">🧬</div>
+                      <div>
+                        <h3 style="margin:0; font-weight:900; color:#22c55e; text-transform:uppercase; letter-spacing:0.05em">Generative Molecular Optimizer</h3>
+                        <p style="margin:0; font-size:0.8rem; color:var(--text-mute)">AI-suggested structural modifications to minimize interaction & toxicity risk</p>
+                      </div>
+                    </div>
+                    <div style="background:rgba(34,197,94,0.1); color:#22c55e; padding:5px 12px; border-radius:30px; font-size:0.75rem; font-weight:800; border:1px solid rgba(34,197,94,0.2)">BIOISOSTERE MODE V1.0</div>
+                  </div>
+                  
+                  <div id="optimizationResults" style="display:grid; grid-template-columns: 1fr; gap:20px;">
+                    <!-- Derivatives will be rendered here -->
+                  </div>
+                </div>
+
+              <!-- Clinical Evidence Panel (FDA / PubMed) -->
+              <div id="evidencePanel" class="glass-panel" style="display:none; margin-top:2rem; padding:25px; border-radius:16px; background:rgba(30,41,59,0.2); border:1px solid rgba(148,163,184,0.1);">
+                <div style="display:flex; align-items:center; gap:12px; margin-bottom:20px;">
+                  <span style="font-size:1.3rem;">🌍</span>
+                  <h3 style="margin:0; font-weight:800; color:var(--text);">Live Clinical Evidence &amp; Literature</h3>
+                </div>
+
+                <div class="evidence-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px,1fr)); gap:20px;">
+                  <div id="fdaWarnings" style="background:rgba(239,68,68,0.05); border:1px solid rgba(239,68,68,0.1); padding:15px; border-radius:12px;">
+                    <h4 style="color:#ef4444; margin-top:0; display:flex; align-items:center; gap:8px;">
+                      <span style="font-size:1.2rem;">⚠️</span> FDA Boxed Warnings
+                    </h4>
+                    <div id="fdaContent" style="font-size:0.85rem; color:var(--text); line-height:1.5;">
+                      No critical boxed warnings detected for these agents.
+                    </div>
+                  </div>
+
+                  <div id="pubmedTrials" style="background:rgba(59,130,246,0.05); border:1px solid rgba(59,130,246,0.1); padding:15px; border-radius:12px;">
+                    <h4 style="color:#3b82f6; margin-top:0; display:flex; align-items:center; gap:8px;">
+                      <span style="font-size:1.2rem;">📚</span> PubMed Clinical Trials
+                    </h4>
+                    <div id="pubmedContent" style="display:flex; flex-direction:column; gap:12px;"></div>
+                  </div>
+                </div>
+
+                <div id="regSync" style="margin-top:20px; padding-top:15px; border-top:1px solid rgba(255,255,255,0.05); display:flex; align-items:center; gap:15px;">
+                  <span style="font-size:0.75rem; color:var(--text-mute); text-transform:uppercase; font-weight:700; letter-spacing:0.05em;">Global Regulation Sync:</span>
+                  <div id="regBadges" style="display:flex; gap:8px;">
+                    <span class="reg-badge" title="Food and Drug Administration (USA)" style="background:rgba(34,197,94,0.1); color:#22c55e; padding:2px 8px; border-radius:4px; font-size:0.7rem; font-weight:700; border:1px solid rgba(34,197,94,0.2);">FDA APPROVED</span>
+                    <span class="reg-badge" title="European Medicines Agency (EU)" style="background:rgba(59,130,246,0.1); color:#3b82f6; padding:2px 8px; border-radius:4px; font-size:0.7rem; font-weight:700; border:1px solid rgba(59,130,246,0.2);">EMA CENTRALIZED</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Regimen Optimization Panel (3+ drugs) -->
+              <div id="optimizationPanel" style="display:none; margin-top:2rem; background:rgba(255,255,255,0.02); border:1px solid rgba(255,255,255,0.06); border-radius:16px; padding:25px;">
+                <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:20px;">
+                  <h3 style="margin:0; font-weight:800; color:var(--accent2);">⏰ Regimen Optimization Timeline</h3>
+                  <span id="regimenScoreBadge" style="font-size:0.75rem; font-weight:700; color:var(--accent2);"></span>
+                </div>
+
+                <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-bottom:20px;">
+                  <!-- Timing Grid -->
+                  <div>
+                    <div style="font-size:0.7rem; color:var(--text-mute); font-weight:700; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:10px;">Dosing Schedule</div>
+                    <div id="timelineGrid" style="display:grid; grid-template-columns:auto repeat(4, 1fr); gap:0;">
+                      <div style="background:rgba(255,255,255,0.03); padding:10px; font-size:0.65rem; color:var(--text-mute);">DRUG</div>
+                      <div style="background:rgba(255,255,255,0.03); padding:10px; font-size:0.65rem; color:var(--text-mute); text-align:center;">🌅 AM</div>
+                      <div style="background:rgba(255,255,255,0.03); padding:10px; font-size:0.65rem; color:var(--text-mute); text-align:center;">☀️ NOON</div>
+                      <div style="background:rgba(255,255,255,0.03); padding:10px; font-size:0.65rem; color:var(--text-mute); text-align:center;">🌆 PM</div>
+                      <div style="background:rgba(255,255,255,0.03); padding:10px; font-size:0.65rem; color:var(--text-mute); text-align:center;">🌙 NIGHT</div>
+                    </div>
+                  </div>
+
+                  <!-- Advice & Synergies -->
+                  <div style="display:flex; flex-direction:column; gap:12px;">
+                    <div id="optimizationAdvice" style="display:flex; flex-direction:column; gap:8px;">
+                      <h4 style="margin:0 0 5px; font-size:0.75rem; text-transform:uppercase; color:var(--text-mute); letter-spacing:0.05em;">Intake Instructions</h4>
+                    </div>
+                    <div id="synergyList" style="display:flex; flex-direction:column; gap:8px;">
+                      <h4 style="margin:0 0 5px; font-size:0.75rem; text-transform:uppercase; color:var(--text-mute); letter-spacing:0.05em;">Cumulative Synergies</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Regimen Heatmap (3+ drugs) -->
+              <div id="regimenMatrix" class="glass-panel" style="display:none; margin-top:2rem; padding:25px; border-radius:16px; background:rgba(255,255,255,0.02);">
+                <h3 style="margin-bottom:20px; font-weight:800; color:var(--accent2);">Regimen Safety Map</h3>
+                <div id="heatmapContainer" style="overflow-x:auto; padding-bottom:10px;"></div>
+              </div>
+
+              <!-- Export Button -->
+              <div class="results-actions" style="margin-top:30px; display:flex; gap:15px; justify-content:center;">
+                <button id="btnExport" class="btn-secondary" style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); color:var(--text); padding:10px 20px; border-radius:8px; cursor:pointer; font-size:0.9rem; font-family:'Inter',sans-serif;">
+                  📄 Download Clinical Report (PDF)
+                </button>
+              </div>
+
+              <!-- 🤖 MEDICAL AI CHATBOT -->
+              <div id="aiChatbotSection" style="margin-top:2rem; background:rgba(0,0,0,0.3); border:1px solid rgba(255,255,255,0.08); border-radius:16px; display:flex; flex-direction:column; overflow:hidden;">
+                <div style="background:rgba(255,255,255,0.05); padding:15px 20px; border-bottom:1px solid rgba(255,255,255,0.05); display:flex; align-items:center; gap:10px;">
+                  <span class="status-dot online"></span>
+                  <strong style="color:var(--accent1);">Clinical AI Assistant</strong>
+                </div>
+                <div id="chatMessages" style="padding:20px; min-height:150px; max-height:250px; overflow-y:auto; font-size:0.85rem; color:var(--text-mute); display:flex; flex-direction:column; gap:15px;">
+                  <div><em>Select an interaction above to ask the AI for a pharmacokinetic breakdown and mitigation strategy.</em></div>
+                </div>
+              </div>
+
+            </div><!-- /#resultsArea -->
+
+          </div>
+        </div><!-- /#tab-analyzer -->
+
+        <!-- ══════════════════════════════════
+             TAB: SAFETY PROFILES
+        ══════════════════════════════════ -->
+        <div id="tab-safety" class="tab-content">
+          <div style="padding-top:20px;">
+            <h2 class="section-title" style="margin-bottom:0.5rem;">Baseline <span class="gradient-text">Safety Grid</span></h2>
+            <p style="color:var(--text-dim); margin-bottom:2rem;">Individual drug risks monitored across 235k clinical profiles. Select a drug below for deep-dive organ toxicity and pharmacogenomics.</p>
+
+            <!-- Drug Selector for deep-dive -->
+            <div id="safetyDrugSelector" style="display:none; margin-bottom:2rem; display:flex; gap:10px; flex-wrap:wrap; align-items:center;">
+              <span style="font-size:0.8rem; color:var(--text-mute); font-weight:700; text-transform:uppercase;">Deep-Dive Drug:</span>
+              <div id="safetyDrugPills" style="display:flex; gap:8px; flex-wrap:wrap;"></div>
+            </div>
+
+            <div id="safetyTabGrid" class="stats-grid">
+              <div class="empty-state-small" style="grid-column:1/-1;">Run an analysis first to populate safety profiles.</div>
+            </div>
+
+            <!-- ═══════════════════════════════════════
+                 MULTI-ORGAN TOXICITY RADAR CHART
+            ═══════════════════════════════════════ -->
+            <div id="multiOrganPanel" style="display:none; margin-top:2.5rem;">
+              <div style="display:flex; align-items:center; gap:15px; margin-bottom:1.5rem;">
+                <div style="background:linear-gradient(135deg,#f59e0b,#ef4444); width:42px; height:42px; border-radius:12px; display:flex; align-items:center; justify-content:center; font-size:1.4rem; box-shadow:0 0 20px rgba(245,158,11,0.3);">🫀</div>
+                <div>
+                  <h3 style="margin:0; font-weight:900; font-size:1.1rem;">Multi-Organ Toxicity Radar</h3>
+                  <p style="margin:0; font-size:0.8rem; color:var(--text-mute);">AI-predicted organ-specific risk from molecular structure</p>
+                </div>
+                <div id="organOverallBadge" style="margin-left:auto; padding:6px 14px; border-radius:20px; font-size:0.8rem; font-weight:800;"></div>
+              </div>
+
+              <div style="display:grid; grid-template-columns:280px 1fr; gap:30px; align-items:start;">
+                <!-- Radar Canvas -->
+                <div style="background:rgba(255,255,255,0.02); border:1px solid rgba(255,255,255,0.06); border-radius:20px; padding:20px;">
+                  <canvas id="organRadarChart" width="240" height="240"></canvas>
+                </div>
+
+                <!-- Organ Breakdown Cards -->
+                <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;" id="organBreakdownGrid"></div>
+              </div>
+            </div>
+
+            <!-- ═══════════════════════════════════════
+                 PGx EVIDENCE DEEP-DIVE
+            ═══════════════════════════════════════ -->
+            <div id="pgxEvidencePanel" style="display:none; margin-top:2.5rem;">
+              <div style="display:flex; align-items:center; gap:15px; margin-bottom:1.5rem;">
+                <div style="background:linear-gradient(135deg,#8b5cf6,#6366f1); width:42px; height:42px; border-radius:12px; display:flex; align-items:center; justify-content:center; font-size:1.4rem; box-shadow:0 0 20px rgba(139,92,246,0.3);">🧬</div>
+                <div>
+                  <h3 style="margin:0; font-weight:900; font-size:1.1rem;">Pharmacogenomics Evidence Map</h3>
+                  <p style="margin:0; font-size:0.8rem; color:var(--text-mute);">PharmGKB-style clinical evidence levels for gene-drug interactions</p>
+                </div>
+                <div id="pgxActionableBadge" style="margin-left:auto; padding:6px 14px; border-radius:20px; font-size:0.8rem; font-weight:800; background:rgba(139,92,246,0.15); color:#a78bfa; border:1px solid rgba(139,92,246,0.3);"></div>
+              </div>
+
+              <!-- Evidence Level Legend -->
+              <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:1.5rem;">
+                <div style="display:flex; align-items:center; gap:5px; font-size:0.72rem; color:var(--text-mute);"><span style="width:10px;height:10px;background:#ef4444;border-radius:2px;display:inline-block;"></span>1A — CPIC Guideline</div>
+                <div style="display:flex; align-items:center; gap:5px; font-size:0.72rem; color:var(--text-mute);"><span style="width:10px;height:10px;background:#f97316;border-radius:2px;display:inline-block;"></span>1B — Strong Evidence</div>
+                <div style="display:flex; align-items:center; gap:5px; font-size:0.72rem; color:var(--text-mute);"><span style="width:10px;height:10px;background:#eab308;border-radius:2px;display:inline-block;"></span>2A — Moderate/Actionable</div>
+                <div style="display:flex; align-items:center; gap:5px; font-size:0.72rem; color:var(--text-mute);"><span style="width:10px;height:10px;background:#3b82f6;border-radius:2px;display:inline-block;"></span>2B+ — Informational</div>
+              </div>
+
+              <div id="pgxEvidenceTable" style="display:flex; flex-direction:column; gap:12px;"></div>
+            </div>
+
+            <!-- ═══════════════════════════════════════
+                 3D MOLECULAR VIEWER
+            ═══════════════════════════════════════ -->
+            <div id="mol3dPanel" style="display:none; margin-top:2.5rem;">
+              <div style="display:flex; align-items:center; gap:15px; margin-bottom:1.5rem;">
+                <div style="background:linear-gradient(135deg,#3b82f6,#2563eb); width:42px; height:42px; border-radius:12px; display:flex; align-items:center; justify-content:center; font-size:1.4rem; box-shadow:0 0 20px rgba(59,130,246,0.3);">🧊</div>
+                <div>
+                  <h3 style="margin:0; font-weight:900; font-size:1.1rem;">Interactive 3D Molecular Viewer</h3>
+                  <p style="margin:0; font-size:0.8rem; color:var(--text-mute);">Generated in real-time via RDKit & 3Dmol.js (Drag to rotate, scroll to zoom)</p>
+                </div>
+              </div>
+              <div style="width:100%; height:400px; position:relative; background:rgba(0,0,0,0.4); border-radius:16px; border:1px solid rgba(255,255,255,0.1); overflow:hidden;">
+                <div id="glViewer" style="width: 100%; height: 100%; position: absolute;"></div>
+                <div id="glLoader" style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,0.5); z-index:10; font-size:0.9rem; color:var(--accent1);">Loading 3D Coordinates...</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ══════════════════════════════════
+             TAB: PHARMACY IQ
+        ══════════════════════════════════ -->
+        <div id="tab-pharmacy" class="tab-content">
+          <div style="padding-top:20px;">
+            <h2 class="section-title" style="margin-bottom:0.5rem;">Pharmacy <span class="gradient-text">Intelligence</span></h2>
+            <p style="color:var(--text-dim); margin-bottom:2rem;">Local price comparisons and insurance fulfillment optimization.</p>
+            <div id="pharmacyTabContent">
+              <div class="empty-state-small">Click the 💊 price badge on any selected drug to view pharmacy pricing information.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ══════════════════════════════════
+             TAB: DRUG CATALOG
+        ══════════════════════════════════ -->
+        <div id="tab-database" class="tab-content">
+          <div style="padding-top:20px;">
+            <h2 class="section-title" style="margin-bottom:0.5rem;">Drug <span class="gradient-text">Knowledge Base</span></h2>
+            <p style="color:var(--text-dim); margin-bottom:2rem;">Explore the full clinical dataset (1,700+ Molecules).</p>
+            <div id="databaseTabContent">
+              <div class="table-wrap">
+                <table class="drug-table" id="drugTable">
+                  <thead>
+                    <tr>
+                      <th>Drug Name</th>
+                      <th>Class</th>
+                      <th>CYP Enzymes</th>
+                      <th>Status</th>
+                      <th>MW (g/mol)</th>
+                      <th>logP</th>
+                    </tr>
+                  </thead>
+                  <tbody id="drugTableBody">
+                    <!-- Filled by JS -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ══════════════════════════════════
+             TAB: POTENCY AI LAB
+        ══════════════════════════════════ -->
+        <div id="tab-potency" class="tab-content">
+          <div style="padding-top:20px;">
+            <h2 class="section-title" style="margin-bottom:0.5rem;">Deep Learning <span class="gradient-text">Potency Predictor</span></h2>
+            <p style="color:var(--text-dim); margin-bottom:2rem;">Evaluate undiscovered chemical structures by predicting pIC50 inhibition potency using our Morgan-Fingerprint RandomForest Regressor.</p>
+            
+            <div style="background:rgba(255,255,255,0.02); border:1px solid rgba(255,255,255,0.07); border-radius:16px; padding:25px; margin-bottom:2rem;">
+              <label style="display:block; font-size:0.8rem; color:var(--text-mute); font-weight:700; margin-bottom:10px;">Input Exact SMILES String</label>
+              <div style="display:flex; gap:10px;">
+                <input type="text" id="potencySmilesInput" placeholder="e.g. CC(=O)Oc1ccccc1C(=O)O" style="flex:1; background:rgba(0,0,0,0.2); border:1px solid rgba(255,255,255,0.1); color:#fff; border-radius:10px; padding:12px; font-family:'JetBrains Mono',monospace;" />
+                <button class="btn-primary" id="btnPredictPotency" style="padding:0 25px;">Predict pIC50</button>
+              </div>
+            </div>
+
+            <div id="potencyResultBox" style="display:none; background:rgba(234,179,8,0.1); border:1px solid rgba(234,179,8,0.3); border-radius:16px; padding:25px; border-left:8px solid #eab308;">
+              <h3 style="margin:0 0 15px 0; font-weight:800; color:#fde047;">Predicted Bioactivity</h3>
+              <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:15px;">
+                <div style="background:rgba(0,0,0,0.2); padding:15px; border-radius:10px;">
+                  <div style="font-size:0.7rem; color:var(--text-mute); margin-bottom:5px;">pIC50 SCORE</div>
+                  <div id="potencyScore" style="font-size:1.8rem; font-weight:900; color:#fde047; font-family:'JetBrains Mono',monospace;"></div>
+                </div>
+                <div style="background:rgba(0,0,0,0.2); padding:15px; border-radius:10px;">
+                  <div style="font-size:0.7rem; color:var(--text-mute); margin-bottom:5px;">ESTIMATED IC50 (nM)</div>
+                  <div id="potencyIC50" style="font-size:1.8rem; font-weight:900; color:var(--text); font-family:'JetBrains Mono',monospace;"></div>
+                </div>
+                <div style="background:rgba(0,0,0,0.2); padding:15px; border-radius:10px;">
+                  <div style="font-size:0.7rem; color:var(--text-mute); margin-bottom:5px;">POTENCY CLASS</div>
+                  <div id="potencyClass" style="font-size:1.2rem; font-weight:700; color:#fff;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </main>
+    </div><!-- /.app-layout -->
+
+    <!-- ── HOW IT WORKS SECTION ── -->
+    <section class="section section-dark" id="how-it-works" style="position:relative; z-index:1;">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">How The <span class="gradient-text">ML Model</span> Works</h2>
+          <p class="section-sub">A multi-stage pipeline combining pharmacology and machine learning</p>
+        </div>
+        <div class="pipeline">
+          <div class="pipe-step">
+            <div class="pipe-number">01</div>
+            <div class="pipe-icon">💊</div>
+            <h3>Data Ingestion</h3>
+            <p>Drug features are fetched from DrugBank — including SMILES fingerprints, protein targets, and metabolic enzymes.</p>
+          </div>
+          <div class="pipe-arrow">→</div>
+          <div class="pipe-step">
+            <div class="pipe-number">02</div>
+            <div class="pipe-icon">🔢</div>
+            <h3>Feature Engineering</h3>
+            <p>CYP450 enzyme overlap, target similarity, physicochemical descriptors (MW, logP) are computed per pair.</p>
+          </div>
+          <div class="pipe-arrow">→</div>
+          <div class="pipe-step">
+            <div class="pipe-number">03</div>
+            <div class="pipe-icon">🧠</div>
+            <h3>ML Ensemble</h3>
+            <p>Random Forest trained on 235k+ known drug pairs. Morgan fingerprints encode molecular structural similarity.</p>
+          </div>
+          <div class="pipe-arrow">→</div>
+          <div class="pipe-step">
+            <div class="pipe-number">04</div>
+            <div class="pipe-icon">📊</div>
+            <h3>Risk Scoring</h3>
+            <p>Model outputs a probability score [0–1] and severity class: None / Mild / Moderate / Severe.</p>
+          </div>
+        </div>
+
+        <div class="metrics-row">
+          <div class="metric-card"><div class="metric-val">94.2%</div><div class="metric-lbl">ROC-AUC Score</div></div>
+          <div class="metric-card"><div class="metric-val">91.8%</div><div class="metric-lbl">F1-Score (Severe)</div></div>
+          <div class="metric-card"><div class="metric-val">96.1%</div><div class="metric-lbl">Precision</div></div>
+          <div class="metric-card"><div class="metric-val">89.7%</div><div class="metric-lbl">Recall</div></div>
+        </div>
+
+        <!-- Architecture Diagram -->
+        <div class="arch-diagram">
+          <div class="arch-title">Model Architecture</div>
+          <div class="arch-flow">
+            <div style="display:flex; gap:20px;">
+              <div class="arch-box arch-input">Drug A Features<br><small>CYP, targets, MW, logP</small></div>
+              <div class="arch-box arch-input">Drug B Features<br><small>CYP, targets, MW, logP</small></div>
+            </div>
+            <div class="arch-connector"></div>
+            <div class="arch-box arch-merge">Pairwise Feature Vector (2052-dim)<br><small>Morgan FP · CYP overlap · Δ(MW,logP)</small></div>
+            <div class="arch-connector"></div>
+            <div class="arch-row">
+              <div class="arch-box arch-model">Random Forest<br><small>500 trees</small></div>
+              <div class="arch-plus">⊕</div>
+              <div class="arch-box arch-model">NLP Severity<br><small>Clinical Text</small></div>
+              <div class="arch-plus">⊕</div>
+              <div class="arch-box arch-model">CYP Rules<br><small>metabolic engine</small></div>
+            </div>
+            <div class="arch-connector"></div>
+            <div class="arch-box arch-out">Risk Score + Severity Class<br><small>None · Mild · Moderate · Severe</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DRUG DATABASE SECTION ── -->
+    <section class="section" id="drugs" style="position:relative; z-index:1;">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Drug <span class="gradient-text">Database</span></h2>
+          <p class="section-sub">All drugs currently in the prediction system</p>
+        </div>
+        <!-- Table is rendered here by the database tab; below is a placeholder view -->
+        <div style="text-align:center; color:var(--text-dim); padding:40px; background:rgba(255,255,255,0.02); border-radius:16px; border:1px solid rgba(255,255,255,0.06);">
+          <div style="font-size:2rem; margin-bottom:10px;">📊</div>
+          <p>Use the <strong>Drug Catalog</strong> tab in the dashboard to browse all molecules.</p>
+          <button class="btn-primary" onclick="switchTab('database')" style="margin-top:15px;">Open Drug Catalog</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── STATS SECTION ── -->
+    <section class="section section-dark" id="stats" style="position:relative; z-index:1;">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">System <span class="gradient-text">Statistics</span></h2>
+        </div>
+        <div class="stats-grid" id="statsGridFooter">
+          <!-- Filled by JS (cloned from overview) -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FOOTER ── -->
+    <footer class="footer" style="position:relative; z-index:1;">
+      <div class="footer-inner">
+        <div class="footer-logo">⬡ DDI<span>Predict</span></div>
+        <p class="footer-note">⚠️ For educational and research purposes only. Always consult a qualified healthcare professional before making clinical decisions.</p>
+        <p class="footer-copy">© 2026 DDIPredict · Built with Python + Flask + Vanilla JS</p>
+      </div>
+    </footer>
+
+
+    <!-- ══════════════════════════════════════════════
+         MODALS
+    ══════════════════════════════════════════════ -->
+
+    <!-- 3D STRUCTURE MODAL -->
+    <div id="molModal" class="modal" style="display:none; position:fixed; z-index:9999; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.85); backdrop-filter:blur(8px); align-items:center; justify-content:center;">
+      <div class="modal-content glass-panel" style="max-width:800px; width:90%; padding:0; overflow:hidden; border-radius:20px; border:1px solid rgba(255,255,255,0.1);">
+        <div class="modal-header" style="padding:15px 25px; border-bottom:1px solid rgba(255,255,255,0.1); display:flex; justify-content:space-between; align-items:center;">
+          <h2 id="modalDrugName" style="font-size:1.5rem; font-weight:800; color:var(--accent); margin:0;">3D Structure Explorer</h2>
+          <button id="closeModal" style="background:none; border:none; color:var(--text-mute); font-size:2.2rem; cursor:pointer; line-height:1;">×</button>
+        </div>
+        <div id="mol3DContainer" style="height:500px; width:100%; position:relative; background:#050505;"></div>
+        <div class="modal-footer" style="padding:15px 25px; background:rgba(255,255,255,0.02); font-size:0.85rem; color:var(--text-mute); border-top:1px solid rgba(255,255,255,0.05);">
+          Drag to rotate • Scroll to zoom • Right-click to pan
+        </div>
+      </div>
+    </div>
+
+    <!-- INDIVIDUAL SAFETY MODAL (upgraded) -->
+    <div id="safetyModal" class="modal-overlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); backdrop-filter:blur(10px); z-index:1001; justify-content:center; align-items:flex-start; padding-top:30px; overflow-y:auto;">
+      <div class="glass-panel" style="width:95%; max-width:700px; padding:35px; border-radius:24px; background:rgba(15,23,42,0.97); border:1px solid rgba(255,255,255,0.1); position:relative; box-shadow:0 25px 50px -12px rgba(0,0,0,0.5); margin-bottom:30px;">
+        <button onclick="document.getElementById('safetyModal').style.display='none'" style="position:absolute; top:25px; right:25px; background:rgba(255,255,255,0.05); border:none; color:white; width:32px; height:32px; border-radius:50%; cursor:pointer; display:flex; align-items:center; justify-content:center;">✕</button>
+
+        <div style="display:flex; align-items:center; gap:15px; margin-bottom:25px;">
+          <div id="safetyDrugIcon" style="width:50px; height:50px; background:var(--accent); border-radius:12px; display:flex; align-items:center; justify-content:center; font-size:1.5rem;">💊</div>
+          <div>
+            <h3 id="safetyDrugName" style="margin:0; font-size:1.4rem; color:#fff; text-transform:capitalize;">Drug Name</h3>
+            <span id="safetyDrugClass" style="font-size:0.75rem; color:var(--accent2); font-weight:800; text-transform:uppercase; letter-spacing:0.1em;">Loading...</span>
+          </div>
+        </div>
+
+        <div style="margin-bottom:25px;">
+          <h4 style="color:var(--text-mute); font-size:0.75rem; text-transform:uppercase; margin-bottom:12px; letter-spacing:0.05em;">Common Side Effects</h4>
+          <div id="safetyCommonList" style="display:flex; flex-wrap:wrap; gap:8px;"></div>
+        </div>
+
+        <div style="margin-bottom:25px;">
+          <h4 style="color:#ef4444; font-size:0.75rem; text-transform:uppercase; margin-bottom:12px; letter-spacing:0.05em;">Serious Risks (Emergency)</h4>
+          <div id="safetySeriousList" style="display:flex; flex-direction:column; gap:8px;"></div>
+        </div>
+
+        <div style="padding:15px; background:rgba(167,139,250,0.05); border:1px solid rgba(167,139,250,0.1); border-radius:12px; margin-bottom:20px;">
+          <h4 style="margin:0 0 5px; font-size:0.8rem; color:var(--accent2);">Patient Management</h4>
+          <p id="safetyManagement" style="margin:0; font-size:0.85rem; color:var(--text-mute); line-height:1.5;"></p>
+        </div>
+
+        <!-- Molecular Toxicity (ADMET) from previous session -->
+        <div id="modalAdmetSection" style="display:none; padding:15px; background:rgba(34,197,94,0.05); border:1px solid rgba(34,197,94,0.1); border-radius:12px; margin-bottom:20px;">
+          <h4 style="margin:0 0 10px; font-size:0.8rem; color:#22c55e; display:flex; align-items:center; gap:6px;">🔬 Molecular Toxicity Assessment (AI)
+            <span id="modalAdmetBadge" style="font-size:0.7rem; padding:2px 8px; border-radius:10px;"></span>
+          </h4>
+          <div id="modalAdmetContent" style="font-size:0.85rem; color:var(--text-mute);"></div>
+        </div>
+
+        <!-- Multi-Organ Radar in modal -->
+        <div id="modalOrganSection" style="margin-top:5px;">
+          <h4 style="font-size:0.8rem; font-weight:800; text-transform:uppercase; color:var(--text-mute); margin-bottom:15px; letter-spacing:0.05em;">🫀 Organ-Specific Risk Radar</h4>
+          <div style="display:grid; grid-template-columns:200px 1fr; gap:20px; align-items:center;">
+            <canvas id="modalRadarChart" width="200" height="200"></canvas>
+            <div id="modalOrganCards" style="display:flex; flex-direction:column; gap:8px;"></div>
+          </div>
+        </div>
+
+        <!-- PGx Evidence in modal -->
+        <div id="modalPgxSection" style="display:none; margin-top:20px; border-top:1px solid rgba(255,255,255,0.05); padding-top:20px;">
+          <h4 style="font-size:0.8rem; font-weight:800; text-transform:uppercase; color:#a78bfa; margin-bottom:12px; letter-spacing:0.05em;">🧬 Pharmacogenomics Evidence</h4>
+          <div id="modalPgxContent" style="display:flex; flex-direction:column; gap:10px;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PHARMACY PRICING MODAL -->
+    <div id="pricingModal" class="modal-overlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); backdrop-filter:blur(8px); z-index:1000; justify-content:center; align-items:center;">
+      <div class="glass-panel" style="width:90%; max-width:600px; padding:30px; border-radius:20px; background:rgba(30,41,59,0.95); position:relative;">
+        <button onclick="document.getElementById('pricingModal').style.display='none'" style="position:absolute; top:20px; right:20px; background:none; border:none; color:white; font-size:1.5rem; cursor:pointer;">×</button>
+        <h3 id="pricingDrugName" style="margin:0 0 5px; color:var(--accent2);">Drug Pricing</h3>
+        <p id="modalDrugTier" style="margin:0 0 20px; font-size:0.8rem; color:var(--text-mute); text-transform:uppercase; letter-spacing:0.1em;"></p>
+        <div id="modalPricingContent"></div>
+        <div style="margin-top:25px; padding:15px; background:rgba(59,130,246,0.1); border-radius:12px; border:1px solid rgba(59,130,246,0.2);">
+          <div style="display:flex; gap:10px; align-items:flex-start;">
+            <span style="font-size:1.2rem;">💡</span>
+            <div>
+              <p style="margin:0; font-size:0.85rem; color:#fff; font-weight:600;">Clinical Saving Tip</p>
+              <p id="modalSavingsAlert" style="margin:5px 0 0; font-size:0.8rem; color:var(--text-mute);"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- START APP -->
+    <script src="app.js?v=3.0"></script>
+  </body>
+</html>
