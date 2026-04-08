@@ -86,5 +86,3 @@ Pull requests and issues welcome!
 File issues or ideas [here](https://github.com/pandashreyan/DDI/issues).
 
 ---
-
-_Created by Shreyan Panda_
